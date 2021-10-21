@@ -8,6 +8,7 @@
 |Carlo|[@carlotrimarchi](https://github.com/carlotrimarchi)|teacher|
 |Helon||teacher|
 |Ahmad||assistant|
+|Aseel|[@aseelalmutareb](https://github.com/aseelalmutareb)|student|
 
 ## Course overview
 
