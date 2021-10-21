@@ -1,4 +1,4 @@
-# Class-Book
+# Class Book
 
 ## Participants
 
