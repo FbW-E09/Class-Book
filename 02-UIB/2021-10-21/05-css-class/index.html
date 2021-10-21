@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* type selector */
+      p {
+        color: tomato;
+      }
+
+      /* class selector */
+      .special {
+        background-color: tomato;
+        color: white;
+      }
+      /* target any "a" element which is a descendant of any element with class ".special" */
+      .special a {
+          background-color: white;;
+          color: teal;
+      }
+
+      /* id selector */
+      #main-title {
+        background-color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="main-title">Homepage</h1>
+    <a class="special" href="">link</a>
+    <p>
+      Lorem ipsum <a href="">dolor</a> sit amet consectetur, adipisicing elit. Harum nisi quod
+      tempore maxime, odit doloribus impedit, sint atque obcaecati facilis, ea
+      quis repellendus facere accusamus eveniet veritatis earum dolore dicta!
+    </p>
+
+    <p class="special">
+      Lorem ipsum dolor sit  consectetur adipisicing elit. Quaerat provident
+      necessitatibus, aspernatur optio, <a href="">amet</a> tenetur esse dolore vel impedit debitis
+      quibusdam natus ad tempora atque corrupti, explicabo sit assumenda
+      adipisci delectus.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat provident
+      necessitatibus, aspernatur optio, tenetur esse dolore vel impedit debitis
+      quibusdam natus ad tempora atque corrupti, explicabo sit assumenda
+      adipisci delectus.
+    </p>
+    <p class="special">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat provident
+      necessitatibus, aspernatur optio, tenetur esse dolore vel impedit debitis
+      quibusdam natus ad tempora atque corrupti, explicabo sit assumenda
+      adipisci delectus.
+    </p>
+  </body>
+</html>

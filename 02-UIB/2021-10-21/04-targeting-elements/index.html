@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: tomato;
+        font-size: 32px;
+      }
+      /* li {
+        background-color: darkorange;
+      } */
+
+      /* a {
+        color: teal;
+      } */
+
+      /* target all h1, all h2, all h3
+      h1, h2, h3 {
+        color: pink;
+      }
+      h1 {
+        color: pink;
+      }
+      h2 {
+        color: pink;
+      }
+      h3 {
+        color: pink;
+      } */
+
+      /* Descendant combinator (the empty space character) */
+      p a {
+        background-color: darkslategrey;
+        color: white;
+      }
+      /* target any "a" element which is a descendant of a "div" element */
+      div a {
+        color: darkorchid;
+      }
+
+      /* target any "a" element which is a descendant of a "h2" element */
+      h2 a {
+        color: darkturquoise;
+      }
+
+      /* */
+      /* ul a {
+        color: chocolate;
+      } */
+
+      ul a {
+        color: goldenrod;
+      } 
+    </style>
+  </head>
+
+  <body>
+    <ol>
+      <li><a href="">list item 1</a></li>
+      <li>
+        <span>
+          <a href="">list item 2</a>
+        </span>
+      </li>
+      <li>list item 3</li>
+    </ol>
+    <a href="">link</a>
+
+    just regular text and a
+
+    <div>
+      <span>
+        just regular text and a
+        <a href="">link inside divs</a>
+      </span>
+    </div>
+
+    <h2>
+      <span>
+        <a href="">link inside divs</a>
+      </span>
+    </h2>
+    <p>
+      Lorem ipsum dolor sit, <a href="">amet</a> consectetur adipisicing elit.
+      Adipisci reiciendis atque, perferendis quisquam dolores saepe asperiores
+      incidunt, sed eveniet voluptates, necessitatibus facilis. Error
+      aspernatur, enim officia fugit consequuntur unde explicabo.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
+      reiciendis atque, perferendis quisquam dolores saepe asperiores incidunt,
+      sed eveniet voluptates, necessitatibus facilis. Error aspernatur, enim
+      officia fugit consequuntur unde explicabo.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
+      reiciendis atque, perferendis quisquam dolores saepe asperiores incidunt,
+      sed eveniet voluptates, necessitatibus facilis. Error aspernatur, enim
+      officia fugit consequuntur unde explicabo.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci
+      reiciendis atque, perferendis quisquam dolores saepe asperiores incidunt,
+      sed eveniet voluptates, necessitatibus facilis. Error aspernatur, enim
+      officia fugit consequuntur unde explicabo.
+    </p>
+  </body>
+</html>

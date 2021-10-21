@@ -1,0 +1,22 @@
+/* this is a comment */
+/*
+    this is 
+    a multi line
+    comment
+*/
+
+/* 
+ - shortcut to add coments on a Mac: cmd shift 7
+ - ctrl shift 7
+ - ctrl /
+ - ctrl shift a
+ - ctrl k c
+*/
+    
+p {
+  color: teal;
+}
+
+a {
+  color: #0eb7;
+}
