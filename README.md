@@ -1,1 +1,1 @@
-# Class-Book
+# Class Book
