@@ -101,10 +101,6 @@ p {
 
 - descendant combinator (empty space " ")
 
-## Exercises
-
-- https://github.com/FbW-E09/UIB-1021-basic-css
-- https://github.com/DigitalCareerInstitute/UIB-content-listmania/tree/master
 
 ## Resources
 
