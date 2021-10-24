@@ -10,6 +10,7 @@
 |Ahmad||assistant|
 |Aseel|[@aseelalmutareb](https://github.com/aseelalmutareb)|student|
 |Kakai|[@justkakai](https://github.com/justkakai)|student|
+|Fabio|[@fabio](https://github.com/fbphc)|student|
 
 ## Course overview
 
