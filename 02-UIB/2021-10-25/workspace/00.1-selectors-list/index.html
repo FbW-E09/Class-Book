@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      /* h1 {
+            background-color: tomato;
+        }
+
+        h2 {
+            background-color: tomato;
+        }
+
+        h3 {
+            background-color: tomato;
+        } */
+
+      /* target every li which is a descendant of a ul */
+      ul li {
+        color: green;
+      }
+
+      /* target a list of elements, specifically: all h1, all h2, all h3 */
+      h1,
+      h2,
+      h3 {
+        background-color: tomato;
+        color: white;
+      }
+
+      /* target span elements that are descendants of h2 that are descendants of div */
+      div h2 span {
+        background-color: seagreen;
+      }
+
+      .section-title,
+      .sub-section-title {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="section-title">Main title</h1>
+    <h2 class="sub-section-title">Sub section title</h2>
+    <h2 class="sub-section-title">Sub section title</h2>
+    <h2 class="sub-section-title">Sub section title</h2>
+    <h3>Sub Sub section title</h3>
+    <h2 class="sub-section-title">Sub section title</h2>
+
+    <div class="red-text">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta veritatis
+        neque laborum illum quisquam tempore ducimus nemo similique voluptates?
+        Perspiciatis optio saepe iste dignissimos officiis nisi dolorum vitae
+        laborum ratione.
+      </p>
+      <span>this is a span</span>
+      <h2>h2 element</h2>
+    </div>
+
+    <!-- <div>
+      <h2><span>target this nested span</span></h2>
+    </div>
+-->
+  </body>
+</html>

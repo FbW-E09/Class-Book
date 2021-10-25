@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+            Set a border to any HTML element by using these 3 properties:
+
+            - border-width 
+                - specify how thick the border should be
+            - border-style
+                - some possible values:
+                    - solid
+                    - dotted
+                    - dashed
+                    - double
+            - border-color
+                - specify the color of the border
+
+            There's a shorthand property that we can use to set the 3 things at once:
+
+            .box {
+                border: 3px solid tomato;
+            }
+
+            We can use the width and height properties to change the size of HTML elements
+
+            - width
+            - height
+
+            .box {
+                height: 100px;
+                width: 200px;
+            }
+        */
+      h1 {
+        /* border-color: tomato;
+            border-style: solid;
+            border-width: 15px; */
+
+        /* border-left: 3px solid tomato; */
+
+        border-bottom: 3px solid tomato;
+      }
+      .default-border {
+        border-color: limegreen;
+        border-style: dotted;
+        border-width: 0;
+      }
+
+      .small-border {
+        border-width: 10px 0;
+      }
+      .medium-border {
+        border-width: 5px;
+      }
+      .large-border {
+        border-width: 10px;
+      }
+
+      .box {
+        /* background-color: tomato; */
+        border: 5px solid rgb(32, 79, 79);
+        height: 300px;
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">I'm a box</div>
+    <h1>Biochemistry</h1>
+    <h2 class="default-border small-border">History</h2>
+    <h2 class="default-border medium-border">Something else</h2>
+    <h2 class="default-border large-border">blablabla</h2>
+  </body>
+</html>
