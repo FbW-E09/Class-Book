@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* object-fit
+
+        - cover
+        - contain
+
+        */
+      img {
+        width: 200px;
+      }
+      /* aspect ratio */
+      .square {
+        background-color: black;
+        height: 200px;
+        width: 100px;
+        object-fit: contain;
+        border: 1px solid tomato;
+      }
+
+      .avatar {
+        border-radius: 50%;
+        height: 100px;
+        object-fit: cover;
+        object-position: top;
+        width: 100px;
+      }
+
+      .fit {
+          /* object-fit: cover; */
+          width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="" src="images/giraffe.jpeg" />
+    <img class="square" src="images/giraffe.jpeg" />
+    <img class="avatar" src="images/giraffe.jpeg" />
+    <img class="fit" src="images/giraffe.jpeg" />
+  </body>
+</html>

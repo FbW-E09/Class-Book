@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+            Pseudo classes
+
+            :hover
+            :active (when a user clicks on an element)
+            :visited
+        */
+      a {
+        font-size: 32px;
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      a:hover {
+        color: tomato;
+      }
+
+      a:active {
+        background-color: violet;
+        color: white;
+      }
+
+      .box {
+        background-color: cyan;
+        height: 100px;
+        width: 100px;
+      }
+
+      .box:hover {
+        background-color: teal;
+      }
+
+      .box:active {
+        border: 3px solid tomato;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://google.com">link</a>
+
+    <div class="box">a box</div>
+  </body>
+</html>
