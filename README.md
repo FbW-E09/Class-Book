@@ -13,6 +13,8 @@
 |Fabio|[@fabio](https://github.com/fbphc)|student|
 |Adrian|[@Adrian](https://github.com/AdrianGAD)|student|
 |Isra|[@Isra](https://github.com/isragh)|student|
+|Regina|[@Reggie899](https://github.com/Reggie899)|student|
+
 
 
 ## Course overview
