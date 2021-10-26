@@ -1,0 +1,44 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+#blog {
+  font-size: 2.4rem;
+  color: #0077b6;
+}
+
+nav,
+ul,
+li {
+  display: inline-block;
+  font-size: 2.2rem;
+  padding: 0.5rem;
+  margin-left: 1rem;
+  border: 1px solid black;
+  /* word-spacing: 20px;
+  letter-spacing: 5px; */
+}
+
+.blog-title {
+  font-size: 2rem;
+  background-color: rgb(166, 233, 211);
+}
+
+img {
+  border-radius: 50%;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.nic1 {
+  float: left;
+  width: 300px;
+}
