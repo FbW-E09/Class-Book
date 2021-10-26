@@ -14,6 +14,7 @@
 |Adrian|[@Adrian](https://github.com/AdrianGAD)|student|
 |Isra|[@Isra](https://github.com/isragh)|student|
 |Yannick|[@YannWe](https://github.com/YannWe)|student|
+|Francis|[@loerk](https://github.com/loerk)|student|
 
 
 ## Course overview
