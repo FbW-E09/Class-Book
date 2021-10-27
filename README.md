@@ -1,4 +1,4 @@
-# Class Book
+# iCoders - Class Book
 
 ## Participants
 
