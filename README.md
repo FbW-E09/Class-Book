@@ -17,7 +17,7 @@
 |Isra|[@Isra](https://github.com/isragh)|student|
 |Francis|[@loerk](https://github.com/loerk)|student|
 |Mehmet|[@akayami001](https://github.com/akayami001)|student|
-|William|[@william](https://github.com/William8421)|student|
+|William|[@william8421](https://github.com/William8421)|student|
 
 
 ## Course overview
