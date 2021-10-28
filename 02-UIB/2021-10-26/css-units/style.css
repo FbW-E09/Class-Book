@@ -1,3 +1,4 @@
+/********************* CSS RESET *************************/
 /* * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,7 @@ html {
   font-size: 62.5%;
 }
 
+/********************* HEADER / NAV *************************/
 #blog {
   font-size: 2.4rem;
   color: #0077b6;
@@ -24,6 +26,8 @@ li {
   /* word-spacing: 20px;
   letter-spacing: 5px; */
 }
+
+/********************* MAIN/BLOG POST ARTICLES *************************/
 
 .blog-title {
   font-size: 2rem;
@@ -42,3 +46,5 @@ p {
   float: left;
   width: 300px;
 }
+
+/********************* FOOTER *************************/
