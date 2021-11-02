@@ -8,27 +8,47 @@ body {
   background: mistyrose;
 }
 
-/* Using a generic class to center contents on the page.
-   I'll only have to make changes in one place.
+/* 
+    Use generic class to center content on page.
+    This way we have only one place to change, if we need to apply changes.
 */
 
 .content-container {
-  /* width: 500px; */
+  max-width: 960px;
   /* border: 3px solid green; */
-  margin: 10px auto;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
-/*  Using a generic class for grey background colors on sections*/
+/* 
+    You can use generic class for background color for sections.
+    This way you can have an overview of all available themes,
+    and again you will need to change only one place and it will change across the entire site (where this class is used).
+*/
 
 .section-grey {
   background: lightgray;
   /* border: 3px solid green; */
 }
 
+/* Hero */
+/* 
+    Here we have two background images: one image and one gradient.
+    The Image has to be second in the list of background images,
+    as it is fully opaque and we will not be able to see through it.
+    The gradient helps improve the readability of the text that is on top of the image.
+*/
+
 .hero {
+  /*
+        Here we give fixed height, as the container will be only as big as its contents.
+        Use fixed heights with caution, as the content might overflow when it gets longer than the fixed height you have specified.
+    */
+  color: white;
+
   height: 600px;
   padding: 60px 0;
+
   background-image: linear-gradient(
       rgba(140, 140, 140, 0.76),
       rgba(0, 0, 0, 0.283)
@@ -36,6 +56,45 @@ body {
     url('../images/coffee.jpg');
   background-size: cover;
   background-position: center bottom;
+  background-repeat: no-repeat;
+}
 
-  color: white;
+.hero-headline,
+.hero-lead {
+  /* border: 2px solid yellow; */
+  width: 70%;
+}
+
+.hero-headline {
+  font-size: 56px;
+}
+
+.hero-lead {
+  font-size: 32px;
+}
+/* Gradient */
+/*
+    We can add multiple backgrounds.
+    The one that is first on the list will be the one that is on top.
+    If it is not transparent at all, we will not be able to see the next.
+*/
+.section-gradient {
+  padding: 60px 0;
+  background-image: linear-gradient(45deg, #ce45e04b, #c844da8c),
+    linear-gradient(120deg, #cfcf16, #2525c7);
+  /* background-repeat: no-repeat, repeat; */
+  background-size: 100%, 10px;
+}
+
+/* Lemons section */
+/*
+    We can size the background:
+    here it has a height of 200px, 
+    and it is repeated horizontally, so it creates a pattern effect.
+*/
+.section-lemons {
+  padding: 120px 60px;
+  background-image: url(../images/leaf.jpg);
+  background-size: auto 200px;
+  background-repeat: repeat-x;
 }
