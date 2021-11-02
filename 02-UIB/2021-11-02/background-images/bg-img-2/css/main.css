@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: mistyrose;
+}
+
+/* Using a generic class to center contents on the page.
+   I'll only have to make changes in one place.
+*/
+
+.content-container {
+  /* width: 500px; */
+  /* border: 3px solid green; */
+  margin: 10px auto;
+  padding: 0 20px;
+}
+
+/*  Using a generic class for grey background colors on sections*/
+
+.section-grey {
+  background: lightgray;
+  /* border: 3px solid green; */
+}
+
+.hero {
+  height: 600px;
+  padding: 60px 0;
+  background-image: linear-gradient(
+      rgba(140, 140, 140, 0.76),
+      rgba(0, 0, 0, 0.283)
+    ),
+    url('../images/coffee.jpg');
+  background-size: cover;
+  background-position: center bottom;
+
+  color: white;
+}
