@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+.margin-box {
+  display: inline-block;
+  border: 5px solid hotpink;
+}
+
+.margin-box > div {
+  width: 80px;
+  height: 80px;
+  background: chartreuse;
+}
+
+.a1 {
+  margin-left: 240px;
+}
+
+.a2 {
+  margin-left: 160px;
+  border: 5px solid dimgray;
+}
+
+.a3 {
+  margin-left: 80px;
+}
+.a4 {
+  border: 5px solid dimgray;
+}
+
+.padding-box {
+  border: 1px solid black;
+}
+.padding-box div {
+  height: 100px;
+  background: red;
+  border: 1px solid green;
+}
+
+.b1 {
+  width: 100px;
+}
+
+.b2 {
+  width: 200px;
+  padding-left: 100px;
+}
+
+.b3 {
+  width: 300px;
+  padding-left: 200px;
+}
+.b4 {
+  width: 400px;
+  padding-left: 300px;
+}
+
+.b2 > div,
+.b3 > div,
+.b4 > div {
+  width: 100px;
+  border: 5px solid tomato;
+  background: yellow;
+}
+.b1 > div {
+  width: 100px;
+  border: 5px solid violet;
+  background: teal;
+}

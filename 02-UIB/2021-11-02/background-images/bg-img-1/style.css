@@ -5,16 +5,16 @@
 }
 
 .container {
-  /* background: center / cover no-repeat url('img/cafe.jpg'); */
-  /* background-image: url('img/cafe.jpg');
-  background-position: center;
+  background: center / cover no-repeat url('img/cafe.jpg');
+  /* background-image: url('img/cafe.jpg'); */
+  /* background-position: center;
   background-size: cover;
   background-repeat: no-repeat; */
-  height: 100vh;
+  /* height: 100vh; */
   /* width: 500px; */
-  /* border: 5px solid red; */
+  border: 5px solid red;
 
-  background: #020024;
+  /* background: #020024;
   background: linear-gradient(
     295deg,
     rgba(35, 32, 87, 1) 0%,
@@ -23,7 +23,7 @@
     rgba(50, 155, 216, 1) 85%,
     rgba(215, 158, 91, 1) 93%,
     rgba(218, 35, 215, 1) 100%
-  );
+  ); */
 }
 
 h1 {
