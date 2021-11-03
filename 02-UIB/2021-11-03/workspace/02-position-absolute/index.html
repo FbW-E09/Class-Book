@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      /* 
+        position absolute:
+
+        absolute positioned elements are removed from the page flow
+        and they don't occupy any space on the page 
+    
+        Those elements will be positioned in relation to the closest "positioned"
+        ancestor, if there is one, otherwise to the body.
+
+        A positioned element is an element with a position value different than "static"
+        */
+
+      .box {
+        background-color: tomato;
+        height: 100px;
+        margin: 5px;
+        /* position: static; */
+        width: 100px;
+      }
+
+      .relative {
+        background-color: dodgerblue;
+        position: relative;
+        /* bottom: 50px; */
+        /* left: 400px; */
+        /* margin-top: 50px; */
+        top: 0;
+      }
+      .absolute {
+        background-color: forestgreen;
+        position: absolute;
+      }
+
+      .box-5 {
+        top: 50%;
+        left: 50%;
+      }
+
+      .box-6 {
+        top: 55%;
+        left: 55%;
+      }
+
+      .container {
+        background-color: hotpink;
+        position: relative;
+        height: 500px;
+        width: 500px;
+      }
+
+      .relative-1 {
+        top: 50px;
+        right: -50px;
+      }
+
+      .box-absolute {
+        background-color: indigo;
+        color: white;
+        position: absolute;
+      }
+      .absolute-1 {
+        right: 0;
+        top: 0;
+      }
+
+      .static-container {
+        background-color: lightgreen;
+        /* position: static; */
+
+        height: 500px;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">1</div>
+    <div class="box relative box-2">2</div>
+    <div class="box box-3">3</div>
+    <div class="box relative box-4">4</div>
+    <div class="box absolute box-5"> 5</div>
+    <div class="box absolute box-6">6</div>
+    <div class="box">7</div>
+
+    <div class="container">
+      relative
+      <div class="box relative relative-1">relative 1</div>
+      <div class="box box-absolute absolute-1">absolute 1</div>
+    </div>
+
+    <div class="static-container">
+      static
+      <div class="box relative relative-1">relative 1</div>
+      <div class="box box-absolute absolute-1">absolute 1</div>
+    </div>
+  </body>
+</html>

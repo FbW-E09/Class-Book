@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* 
+
+        Block elements
+
+        - by default they occupy the whole space horizontally
+        - they force element next to them to go on a new line
+        - we can control their size: both width and height
+        - we can control margin and padding: both horizontally and vertically 
+        */
+      .div {
+        background-color: tomato;
+        border: 3px solid black;
+        margin: 48px;
+        padding: 16px;
+        height: 200px;
+        width: 200px;
+      }
+
+      /* 
+      Inline elements:
+
+      - they are as big as their content
+      - more than 1 element can stay on the same line
+      - we can't change their width or height
+      - we have control only over the left and right sides for padding and margin
+      */
+      .span {
+        background-color: cornflowerblue;
+        border: 3px solid black;
+        height: 200px;
+        margin: 48px;
+        /* padding: 16px; */
+        width: 200px;
+      }
+
+      /* 
+      Inline-block elements:
+
+      - by default they are as big as their content
+      - more than 1 element can stay on the same line
+      - we can change their width and height
+      - padding and margin behaves like in block elements
+      */
+      .inline-block {
+        background-color: darkgoldenrod;
+        border: 3px solid black;
+        display: inline-block;
+        height: 50px;
+        margin: 16px;
+        padding: 16px;
+        width: 50px;
+      }
+
+      /* 
+      img is an inline element, but behaves like an inline-block one
+      */
+      img {
+          border: 3px solid black;
+          margin: 20px;
+          padding: 20px;
+          width: 200px;
+      }
+
+      .one-line {
+          border: 1px solid black;
+      }
+
+      .button {
+          background-color: deeppink;
+          display: inline-block;
+          padding: 16px;
+      }
+    </style>
+  </head>
+  <body>
+      <button>button</button>
+      <p class="one-line">one line <button>button</button> paragraph <span class="button">button</span></p>
+    <p>
+      Lorem ipsum dolor sit <span class="span">amet</span> consectetur
+      adipisicing elit. Nulla debitis itaque rem accusamus, pariatur officia
+      incidunt. <span class="inline-block">Nemo</span> exercitationem nulla nesciunt fugit, ea illo? Ipsam id quo
+      labore corporis fugiat pariatur?
+    </p>
+
+    <div class="div">div</div>
+    <span class="span">span</span>
+    <span class="span">span</span>
+    <span class="span">span</span>
+
+    <span class="inline-block">inline block</span>
+    <span class="inline-block">inline block</span>
+    <span class="inline-block">inline block</span>
+    <span class="inline-block">inline block</span>
+    <span class="inline-block">inline block</span>
+    <span class="inline-block">inline block</span>
+    <span class="inline-block">inline block</span>
+    <span class="inline-block">inline block</span>
+    <span class="inline-block">inline block</span>
+    <span class="inline-block">inline block</span>
+    <span class="inline-block">inline block</span>
+
+    <h1></h1>
+    <h2></h2>
+    <nav></nav>
+    <header></header>
+    <footer></footer>
+    <ol></ol>
+
+    <ul>
+      <li></li>
+    </ul>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <a href="#">link</a>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <em>em</em>
+    <strong>strong</strong>
+
+    <img src="leaf.jpg" />
+  </body>
+</html>

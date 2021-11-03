@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        Position relative:
+
+        "relative" positioned elements will be moved in relation to themselves,
+        from their original position.
+
+        The element will keep occupying space in the starting position
+      */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        background-color: tomato;
+        height: 100px;
+        margin: 5px;
+        /* position: static; */
+        width: 100px;
+      }
+
+      .relative {
+        background-color: dodgerblue;
+        position: relative;
+      }
+
+      .box-2 {
+        top: 50px;
+        left: 20px;
+      }
+
+      .box-4 {
+        bottom: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">1</div>
+    <div class="box relative box-2">2</div>
+    <div class="box">3</div>
+    <div class="box relative box-4">4</div>
+    <div class="box">5</div>
+  </body>
+</html>
