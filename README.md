@@ -1,4 +1,4 @@
-# Class Book
+# iCoders - Class Book
 
 ## Participants
 
@@ -13,8 +13,11 @@
 |Fabio|[@fabio](https://github.com/fbphc)|student|
 |Adrian|[@Adrian](https://github.com/AdrianGAD)|student|
 |Isra|[@Isra](https://github.com/isragh)|student|
+|Yannick|[@YannWe](https://github.com/YannWe)|student|
 |Francis|[@loerk](https://github.com/loerk)|student|
 |Mehmet|[@akayami001](https://github.com/akayami001)|student|
+|William|[@william8421](https://github.com/William8421)|student|
+|Regina|[@Reggie899](https://github.com/Reggie899)|student|
 
 
 ## Course overview
