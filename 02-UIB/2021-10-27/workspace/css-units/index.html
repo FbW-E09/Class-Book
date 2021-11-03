@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+            - px
+            - em
+            - rem (relative to the root element, or the HTML element)
+            - %
+            - vw, vh
+                - viewport width
+                - viewport height
+            
+        */
+
+      html {
+        /* font-size: 24px; */
+
+        /* The 62.5% of 16 is 10. It will make other calculations
+          based on 10, which might be easier */
+        /* font-size: 62.5%;  */
+      }
+      body {
+        /* font-size: 0.9em; */
+      }
+
+      .container {
+        /* font-size: 16px; */
+      }
+
+      .big-text {
+        /* font-size: 2em; */
+      }
+
+      .big-text {
+        font-size: 0.5em;
+      }
+
+      .text {
+        /* 
+          16 * 2 * 1.75
+          */
+        /* font-size: 1.75em;     1 * 16       */
+        /* font-size: 2.4rem; 24 * 1.5 */
+      }
+
+      .box {
+        background-color: tomato;
+        height: 10rem;
+        width: 10rem;
+      }
+
+      .container-2 {
+        border: 2px solid red;
+        width: 50%;
+      }
+      .box-2 {
+        background-color: teal;
+        /* border-radius: 50%; */
+        height: 200px;
+        width: 50%;
+      }
+
+      .box-3 {
+        background-color: cornflowerblue;
+        height: 30vh;
+        width: 100vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box-3"></div>
+
+    <div class="container-2">
+      <div class="box-2"></div>
+    </div>
+
+    <div class="box"></div>
+
+    <div class="container">
+      <div class="big-text">
+        <p class="text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+          dolore veritatis iure molestiae exercitationem aliquid amet facilis et
+          ipsa, ab ut dignissimos placeat voluptate natus officia odio
+          cupiditate? Repellat, libero.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

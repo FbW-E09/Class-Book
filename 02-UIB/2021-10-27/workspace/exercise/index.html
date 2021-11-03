@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.content-box div {
+    box-sizing: content-box;
+}
+
+.border-box div {
+    box-sizing: border-box;
+}
+
+.box-1 {
+    background: tomato;
+}
+.box-2 {
+    background: teal;
+}
+.box-3 {
+    background: limegreen;
+}
+.box-4 {
+    background: hotpink;
+}
+
+.box-5 {
+    background: tomato;
+}
+.box-6 {
+    background: teal;
+}
+.box-7 {
+    background: limegreen;
+}
+.box-8 {
+    background: hotpink;
+}
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Box sizing</h1>
+
+    <h2>Content box</h2>
+    <div class="content-box">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+    </div>
+
+    <h2>Border box</h2>
+    <div class="border-box">
+        <div class="box-5"></div>
+        <div class="box-6"></div>
+        <div class="box-7"></div>
+        <div class="box-8"></div>
+    </div>
+    
+</body>
+</html>

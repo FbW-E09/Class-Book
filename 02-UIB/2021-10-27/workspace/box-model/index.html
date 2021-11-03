@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        The asterisk is called "universal selector"
+
+        This rule is applying the box-sizing to every element on the page
+         */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      /* 
+      Box Model:
+
+      - content
+
+      - padding
+      - border
+      - margin
+    */
+
+      .exception {
+        box-sizing: content-box;
+      }
+      span {
+        border: 1px solid teal;
+      }
+
+      a {
+        border: 1px solid chocolate;
+      }
+
+      p {
+        border: 1px solid goldenrod;
+      }
+
+      li {
+        border: 1px solid green;
+      }
+
+      .picture {
+        background-color: teal;
+        border: 6px dashed hotpink;
+        margin: 1em;
+        padding: 1em;
+        width: 200px;
+      }
+      img {
+        width: 100%;
+      }
+
+      .wall {
+        background-color: lavenderblush;
+        border: 1px solid black;
+        height: 500px;
+        width: 200px;
+      }
+
+      /* box-sizing */
+      /*
+       border total: 6px
+       padding total: 32px
+       padding + border = 38px
+       width:  180px - 38px = 142
+
+       box-sizing:
+
+       - content-box (default)
+        - the calculation for the final size will start
+        from the content size
+        - padding and border are added on top of that
+        - the final size is a bit hard to predict
+
+       - border-box
+        - the width calculated including both padding 
+        and border
+        - the margin is still extra
+      */
+      .wall img {
+        border: 3px solid tomato;
+        margin: 16px;
+        padding: 16px;
+        width: 180px;
+      }
+
+      /* 
+      final size: 100px 
+      content size: 100 - 16 - 16 - 5 - 5 = 58
+      
+      */
+      .box {
+        box-sizing: border-box;
+
+        background-color: tomato;
+        height: 100px;
+        width: 100px;
+        padding: 16px;
+        border: 5px solid teal;
+      }
+    </style>
+  </head>
+  <body>
+      <h1>title</h1>
+      <h2>title</h2>
+      <h3>title</h3>
+      <h4>title</h4>
+    <div class="box"></div>
+    <div class="wall">
+      <img src="images/giraffe.jpeg" />
+    </div>
+    <div class="picture">
+      <img src="images/giraffe.jpeg" />
+    </div>
+    <div>a div</div>
+    <span>a span</span>
+    <a href="#">a link</a>
+    <p>a paragraph</p>
+    <ul>
+      <li>a list item</li>
+      <li>a list item</li>
+      <li>a list item</li>
+    </ul>
+  </body>
+</html>
