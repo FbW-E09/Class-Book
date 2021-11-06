@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+        }
+        .profile {
+            position: relative;
+            border: 3px solid white;
+            margin: 0 auto;
+            height: 100%;
+            width: 400px;
+        }
+        img {
+            /* display: block; */
+            height: 100%;
+            object-fit: contain;
+            width: 100%;
+        }
+
+        .name, .last-name {
+            background-color: white;
+            position: absolute;
+            right: -16px;
+        }
+        .name {
+            top: 2%;
+        }
+        .last-name {
+            top: 10%;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="profile">
+      <img src="coffee.jpg" />
+      <div class="name">Rick</div>
+      <div class="last-name">Sanchez</div>
+    </div>
+  </body>
+</html>
