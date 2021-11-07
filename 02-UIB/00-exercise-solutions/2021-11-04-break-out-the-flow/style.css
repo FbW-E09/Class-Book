@@ -1,0 +1,40 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.halloworld {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+    text-align: center;
+    /* 0 auto would conflict with re-positioning */
+    margin: auto auto;
+    position: relative;
+    left: -5px;
+    top: 7px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.box1 {
+    background-color: red;
+    bottom: 0px;
+}
+
+.box2 {
+    background-color: rgb(0, 255, 85);
+    bottom: 10px;
+    left: 10px;
+}
+.box3 {
+    background-color: rgb(0, 183, 255);
+    bottom: 20px;
+    left: 20px;
+    z-index: -1;
+}
