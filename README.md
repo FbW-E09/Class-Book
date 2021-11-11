@@ -21,6 +21,7 @@
 |Nila|[@nilahomar](https://github.com/nilahomar)|student|
 |Zharko|[@zmijata1979](https://github.com/zmijata1979)|student|
 |Sadaf|[@green2050](https://github.com/green2050)|Student|
+|Dulal|[@nndulal](https://github.com/nndulal)|Student|
 
 ## Course overview
 
