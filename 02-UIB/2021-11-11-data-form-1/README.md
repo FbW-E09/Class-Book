@@ -83,3 +83,7 @@ The value of the `for` attribute in the label must match the value of the `id` i
     Accept terms and conditions
 </label>
 ```
+
+## Resources
+
+- [How to style forms](https://blog.logrocket.com/how-to-style-forms-with-css-a-beginners-guide/)
