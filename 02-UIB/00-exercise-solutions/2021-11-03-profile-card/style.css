@@ -1,0 +1,35 @@
+body {
+  background: rgb(20, 20, 20);
+}
+
+.card {
+  border: 3px solid white;
+  margin: auto;
+  width: 300px;
+}
+
+.picture {
+  position: relative;
+}
+
+.picture img {
+  display: block;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.picture .name {
+  right: -5%;
+  position: absolute;
+  top: 5%;
+}
+
+.picture .name > div {
+  background: rgba(255, 255, 255, 0.85);
+  border: 3px solid rgb(140, 170, 121);
+  border-radius: 16px;
+  color: black;
+  margin-top: 0.75rem;
+  padding: 0.25rem 0.75rem;
+}

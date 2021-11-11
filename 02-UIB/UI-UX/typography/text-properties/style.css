@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Comic Neue', cursive;
+}
+
+#blog {
+  font-size: 3rem;
+  letter-spacing: 10px;
+  color: rgb(95, 226, 193);
+  text-decoration: overline underline wavy rgb(0, 153, 255);
+  margin-left: 2rem;
+}
+
+nav,
+li {
+  display: inline-block;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-left: 2rem;
+  padding: 1rem;
+}
+
+.main-heading {
+  padding: 2rem;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(177, 189, 252, 0.662) 57%,
+    rgb(240, 147, 165) 100%
+  );
+}
+
+h2 {
+  font-size: 3rem;
+  padding: 2rem;
+  margin: 1rem;
+  border: 4px dashed rgb(211, 97, 211);
+  text-align: center;
+  text-shadow: -2px 2px rgb(240, 147, 165), -4px 4px rgb(211, 97, 211);
+}
+
+p {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  line-height: 2.5rem;
+}
+
+article {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+img {
+  display: block;
+  margin: 2rem auto;
+}

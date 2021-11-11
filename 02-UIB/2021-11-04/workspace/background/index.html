@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        - background-color
+
+        - background-image
+        - background-size 
+        - background-repeat
+        - background-position
+        - background-attachment
+
+        background-clip
+        background-origin
+    
+        */
+      body {
+        background-color: black;
+      }
+      .pattern {
+        display: inline-block;
+        background-color: yellowgreen;
+        background-image: url("watercolor.png");
+        background-size: 20%;
+        background-repeat: repeat;
+        border: 3px solid tomato;
+        height: 500px;
+      }
+      .container {
+        background-attachment: fixed;
+        background-color: yellowgreen;
+        background-image: url("coffee.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+        border: 3px solid tomato;
+        height: 300px;
+        width: 20%;
+        margin: 50px;
+        display: inline-block;
+      }
+
+      .main-container {
+        background-color: yellowgreen;
+        border: 3px solid teal;
+        margin: 0 auto;
+        width: 60%;
+      }
+
+      .gradient {
+        background: linear-gradient(135deg, #eceddc 25%, transparent 25%) -50px 0,
+          linear-gradient(225deg, #eceddc 25%, transparent 25%) -50px 0,
+          linear-gradient(315deg, #eceddc 25%, transparent 25%),
+          linear-gradient(45deg, #eceddc 25%, transparent 25%);
+        background-size: 100px 100px;
+        background-color: tomato;
+        height: 400px;
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gradient"></div>
+    <div class="main-container">
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque beatae,
+        qui voluptatibus fuga illum est ab, blanditiis deserunt architecto
+        cumque exercitationem voluptates nihil voluptas quisquam provident
+        eveniet consectetur sequi sed.
+      </div>
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+      <div class="container"></div>
+    </div>
+  </body>
+</html>

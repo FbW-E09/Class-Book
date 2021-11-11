@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*
+        - px
+        - vw, vh
+        - rem (root em, it's relative to the font-size of the root element)
+        - em (relative to the font-size of the parent element)
+        - %
+
+        Root element: <html>
+        */
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      html {
+        font-size: 24px;
+      }
+
+      .container {
+        border: 3px solid teal;
+        font-size: 1.5rem;
+        margin: 0 auto;
+        width: 500px;
+      }
+      p {
+        /* font-size: 2em; */
+      }
+
+      .box {
+        background-color: tomato;
+        height: 100px;
+        width: 25%;
+      }
+
+      .box-vw {
+        background-color: turquoise;
+        height: 100px;
+        margin-bottom: 1em;
+        width: 100vw;
+      }
+      .box-percent {
+        background-color: violet;
+        height: 100px;
+        width: 100%;
+      }
+
+      header {
+        background-color: yellowgreen;
+        height: 70vh;
+      }
+
+      .height-800 {
+          border: 3px solid tomato;
+          height: 100%;
+      }
+
+      .full-width-and-height {
+        background-color: turquoise;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="height-800">
+      <div class="full-width-and-height">100</div>
+    </div>
+    <header>this is my header</header>
+    <h1>this should always be visible</h1>
+    <div class="box-vw">viewport</div>
+    <div class="box-percent">percentage</div>
+    <div class="box"></div>
+    <div class="container">
+      <div class="box-vw">viewport</div>
+      <div class="box-percent">percentage</div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit numquam
+        ab, consectetur voluptate sed eaque minima doloribus dolorum repellat
+        quia error quis quas, quisquam et necessitatibus, officiis dolorem.
+        Saepe, unde.
+      </p>
+    </div>
+  </body>
+</html>
