@@ -19,8 +19,9 @@
 |William|[@william8421](https://github.com/William8421)|student|
 |Regina|[@Reggie899](https://github.com/Reggie899)|student|
 |Nila|[@nilahomar](https://github.com/nilahomar)|student|
+|Zharko|[@zmijata1979](https://github.com/zmijata1979)|student|
+|Sadaf|[@green2050](https://github.com/green2050)|Student|
 |JoAnn|[@JoAnnSutojo](https://github.com/JoAnnSutojo)|student|
-
 
 ## Course overview
 
