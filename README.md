@@ -1,7 +1,9 @@
-# iCoders - Class Book
+<!-- @fellow iCoders: I added the logo only in the context of an assignment. It is temporary/only suggested :) -->
+
+#  <img src="logo.png" width="50"> iCoders - Class Book  
+
 
 ## Participants
-
 
 |name|GitHub|role|
 |:---|:---|:---|
@@ -33,3 +35,4 @@
 |SPA - Single Page Applications| 16 March - 25 May|
 |Backend| 30 May - 18 August |
 |Final Project| 22 August - 10 October |
+
