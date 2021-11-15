@@ -20,6 +20,7 @@
 |Regina|[@Reggie899](https://github.com/Reggie899)|student|
 |Nila|[@nilahomar](https://github.com/nilahomar)|student|
 |Sadaf|[@green2050](https://github.com/green2050)|Student|
+|anu|[@anudesi](https://github.com/anudesi)|Student|
 
 ## Course overview
 
