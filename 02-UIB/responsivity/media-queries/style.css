@@ -1,0 +1,53 @@
+/* Default styles */
+
+body {
+  text-align: center;
+}
+
+h1 {
+  display: none;
+}
+
+/* 1280px to 1024px - Desktop */
+/* 1024px to 768px - Tablet landscape mode */
+/* 768px to 480px  - tablet */
+/* 480px and less - phone landscape mode and smaller */
+/* ============= */
+
+/* Media Query styles  */
+
+/* Small devices: apply styles from 0 to 480px */
+
+@media (max-width: 480px) {
+  body {
+    background: red;
+  }
+  .small-devices {
+    display: block;
+    font-size: 30px;
+    border: 1px solid black;
+  }
+}
+
+/* small phones to small tablets: 481px to 767px */
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  body {
+    background-color: cyan;
+  }
+  .tablet h1 {
+    display: block;
+  }
+}
+
+/* small tablets to big tablets - 768px to 1023px */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: orange;
+  }
+  .normal h1 {
+    display: block;
+    font-size: 40px;
+  }
+}

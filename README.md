@@ -1,7 +1,9 @@
-# iCoders - Class Book
+<!-- @fellow iCoders: I added the logo only in the context of an assignment. It is temporary/only suggested :) -->
+
+#  <img src="logo.png" width="50"> iCoders - Class Book  
+
 
 ## Participants
-
 
 |name|GitHub|role|
 |:---|:---|:---|
@@ -19,8 +21,10 @@
 |William|[@william8421](https://github.com/William8421)|student|
 |Regina|[@Reggie899](https://github.com/Reggie899)|student|
 |Nila|[@nilahomar](https://github.com/nilahomar)|student|
+|Zharko|[@zmijata1979](https://github.com/zmijata1979)|student|
 |Sadaf|[@green2050](https://github.com/green2050)|Student|
 |anu|[@anudesi](https://github.com/anudesi)|Student|
+|JoAnn|[@JoAnnSutojo](https://github.com/JoAnnSutojo)|student|
 
 ## Course overview
 
@@ -32,3 +36,4 @@
 |SPA - Single Page Applications| 16 March - 25 May|
 |Backend| 30 May - 18 August |
 |Final Project| 22 August - 10 October |
+

@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: tomato;
+  padding: 5rem;
+  color: white;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+p {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: teal;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+}
+
+/* Extra small devices below 600px */
+@media (max-width: 600px) {
+  .main {
+    text-align: center;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 2rem;
+    /* display: none; */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 767px) {
+}
+
+@media (min-width: 1200px) {
+  .main {
+    padding: 7em;
+    padding-left: 12rem;
+  }
+}
