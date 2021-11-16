@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main class="form-wrap">
+        <header>
+          <h1>Sign up</h1>
+          <p>It's free...</p>
+        </header>
+
+        <form action="https://formspree.io/f/xdoyqdee" method="get">
+          <div class="form-group">
+            <label for="range">Good Form?</label>
+            <input type="range" name="range" id="range" />
+          </div>
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input
+              type="text"
+              name="firstName"
+              id="first-name"
+              placeholder="Enter First Name"
+              required
+              maxlength="100"
+            />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input
+              type="text"
+              name="last"
+              id="last-name"
+              placeholder="Enter Last Name"
+              required
+              maxlength="100"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Enter password"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password2">Confirm password</label>
+            <input
+              type="password"
+              name="password2"
+              id="password2"
+              placeholder="Confirm password"
+            />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

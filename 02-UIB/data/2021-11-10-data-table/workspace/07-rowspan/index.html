@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        table {
+            border: 0;
+            border-collapse: collapse;
+        }
+
+        td, th {
+
+            border: 0;
+            /* border: 1px solid darkgray; */
+            padding: 16px;
+        }
+
+        th {
+            background-color: grey;
+            border: 1px solid darkgray;
+        }
+
+        /* tr:nth-child(2n) {
+            background-color: lightgray;
+        } */
+
+        .saturn {
+            background-color: lightpink;
+        }
+
+        .media-markt {
+            background-color: lightskyblue;
+        }
+
+        .other-shop {
+            background-color: mediumspringgreen;
+        }
+    </style>
+  </head>
+  <body>
+    <table>
+        <colgroup>
+            <col span="2">
+            <col span="2" class="saturn">
+            <col span="2" class="media-markt">
+            <col span="2" class="other-shop">
+        </colgroup>
+      <tr>
+        <td rowspan="2"></td>
+        <td rowspan="2"></td>
+        <th colspan="2">Saturn</th>
+        <th colspan="2">Media Markt</th>
+        <th colspan="2">Other shop</th>
+      </tr>
+      <tr>
+        <th scope="col">Produced</th>
+        <th scope="col">Sold</th>
+        <th scope="col">Produced</th>
+        <th scope="col">Sold</th>
+        <th scope="col">Produced</th>
+        <th scope="col">Sold</th>
+      </tr>
+      <tr>
+        <th scope="rowgroup" rowspan="3">Computer</th>
+        <th scope="row">Laptops</th>
+        <td>50,000</td>
+        <td></td>
+        <td>100,000</td>
+        <td>80,000</td>
+        <td>100,000</td>
+        <td>80,000</td>
+      </tr>
+      <tr>
+        <th scope="row">Desktops</th>
+        <td>10,000</td>
+        <td>5,000</td>
+        <td>12,000</td>
+        <td>9,000</td>
+        <td>100,000</td>
+        <td>80,000</td>
+      </tr>
+      <tr>
+        <th scope="row">Monitors</th>
+        <td>10,000</td>
+        <td>5,000</td>
+        <td>100,000</td>
+        <td>80,000</td>
+        <td>12,000</td>
+        <td>9,000</td>
+      </tr>
+      <tr>
+        <th rowspan="3">Audio</th>
+        <th scope="row">Headphones</th>
+        <td>10,000</td>
+        <td>5,000</td>
+        <td>100,000</td>
+        <td>80,000</td>
+        <td>12,000</td>
+        <td>9,000</td>
+      </tr>
+      <tr>
+        <th scope="row">Microphones</th>
+        <td>100,000</td>
+        <td>80,000</td>
+        <td>10,000</td>
+        <td>5,000</td>
+        <td>12,000</td>
+        <td>9,000</td>
+      </tr>
+      <tr>
+        <th scope="row">Stereo system</th>
+        <td>10,000</td>
+        <td>5,000</td>
+        <td>12,000</td>
+        <td>100,000</td>
+        <td>80,000</td>
+        <td>9,000</td>
+      </tr>
+      <tr>
+        <th rowspan="4">Kitchen</th>
+        <th scope="row">Pans</th>
+        <td>10,000</td>
+        <td>100,000</td>
+        <td>80,000</td>
+        <td>5,000</td>
+        <td>12,000</td>
+        <td>9,000</td>
+      </tr>
+      <tr>
+        <th scope="row">Mixer</th>
+        <td>10,000</td>
+        <td>5,000</td>
+        <td>100,000</td>
+        <td>80,000</td>
+        <td>12,000</td>
+        <td>9,000</td>
+      </tr>
+      <tr>
+        <th scope="row">Coffee machine</th>
+        <td>100,000</td>
+        <td>80,000</td>
+        <td>10,000</td>
+        <td>5,000</td>
+        <td>12,000</td>
+        <td>9,000</td>
+      </tr>
+      <tr>
+        <th scope="row">Ovens</th>
+        <td>100,000</td>
+        <td>80,000</td>
+        <td>10,000</td>
+        <td>5,000</td>
+        <td>12,000</td>
+        <td>9,000</td>
+      </tr>
+    </table>
+  </body>
+</html>
