@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!--
+        form:
+
+        - action: we can specify here the url that will process our data or the url to which we send our data
+        - method:
+            - post: used to send data to the URL specified in the target attribute
+            - get: used when we want to request something from a URL
+
+  -->
+  <body>
+    <form action="https://formspree.io/f/xrgrnzwb" method="post">
+      <div>
+        <div>First Name</div>
+        <input type="text" name="first-name"/>
+      </div>
+      <div>
+        <div>Last Name</div>
+        <input type="text" name="last-name"/>
+      </div>
+      <div>
+        <div>Favourite color</div>
+        <input type="color" name="favourite-color"/>
+      </div>
+      <div>
+        <div>Password</div>
+        <input type="password" name="password"/>
+      </div>
+      <div>
+        <input type="submit" value="Click" />
+      </div>
+      <!-- <div>
+        <input type="button" value="Submit button" />
+      </div>
+      <div>
+        <button>button</button>
+      </div> -->
+    </form>
+  </body>
+</html>

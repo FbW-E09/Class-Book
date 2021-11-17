@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Inputs & Forms</h1>
+      </header>
+
+      <form action="https://www.reddit.com/search/">
+        <label for="search">Search:</label>
+        <input type="search" name="q" id="search" placeholder="Reddit Search" />
+        <label for="sort">Sort by:</label>
+        <select id="sort" name="sort">
+          <option value="relevance">relevance</option>
+          <option value="hot">hot</option>
+          <option value="new">new</option>
+          <option value="comments">comments</option>
+        </select>
+        <input type="submit" value="Search" />
+      </form>
+
+      <h2>Form</h2>
+      <form action="https://www.google.com">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter Username"
+          required
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Enter password"
+          minlength="8"
+          required
+        />
+        <br />
+        <label for="age">Chooose your age</label>
+        <input type="number" name="age" id="age" min="18" max="100" step="10" />
+
+        <textarea name="" id="" cols="20" rows="20">
+Comments or concerns?</textarea
+        >
+
+        <button type="submit">submit</button>
+      </form>
+
+      <label for="languages">Choose your language:</label>
+      <input list="language" id="languages" name="language" />
+
+      <datalist id="language">
+        <option value="German"></option>
+        <option value="English"></option>
+        <option value="Spanish"></option>
+        <option value="Italian"></option>
+        <option value="Russian"></option>
+      </datalist>
+
+      <h2>Color Input</h2>
+      <label for="color">Choose a color</label>
+      <input type="color" name="color" id="color" value="#e22400" />
+
+      <h2>File Input</h2>
+      <label for="file">Choose a file:</label>
+      <input type="file" name="file" id="file" />
+
+      <h2>Email</h2>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" required />
+
+      <h2>Date Input</h2>
+      <label for="date">Date</label>
+      <input type="date" name="date" id="date" />
+    </div>
+  </body>
+</html>
