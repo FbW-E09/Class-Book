@@ -12,11 +12,11 @@
       }
 
       fieldset {
-          border-right: 1px solid rgba(160, 89, 76, 0.029);
+        border-right: 1px solid rgba(160, 89, 76, 0.029);
       }
       h1 {
-          color: blueviolet;
-          font-size: 32px;
+        color: blueviolet;
+        font-size: 32px;
       }
       input {
         font-size: 1.25em;
@@ -33,21 +33,24 @@
       }
 
       /* Target all the input elements with type text */
-      input[type="text"] {
+      input[type="text"],
+      input[type="password"],
+      input[type="email"] {
         border: 1px solid red;
         border-radius: 16px;
       }
 
       input[type="submit"] {
-          background-color: tomato;
-          border: 0;
+        background-color: tomato;
+        border: 0;
       }
     </style>
   </head>
   <body>
-    <form action="https://formspree.io/f/xrgrnzwb" method="post">
+    <form action="https://formspree.io/f/xrgrnzwb" method="get">
       <fieldset>
         <legend>Personal details</legend>
+        <input type="range">
         <div class="form-field">
           <label for="first-name">First name</label>
           <input
