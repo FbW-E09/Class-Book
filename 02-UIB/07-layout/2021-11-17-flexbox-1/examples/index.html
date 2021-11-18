@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      nav {
+        background-color: tomato;
+        padding: 1.5rem;
+      }
+      @media (min-width: 420px) {
+        .container {
+          display: flex;
+        }
+      }
+      .container {
+        flex-wrap: wrap;
+        list-style-type: none;
+        padding: 0;
+        /* height: 200px; */
+      }
+
+      li {
+        background-color: white;
+        border-radius: 1rem;
+        margin-right: 1.5rem;
+        padding: 0.5rem;
+      }
+
+      /* 
+      align-self
+
+      justify-content: flex-end;
+      */
+      li:last-child {
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+
+      .header {
+        display: flex;
+        height: 40vh;
+      }
+
+      .header .title {
+        background-color: turquoise;
+        width: 100%;
+      }
+
+      .header .picture {
+        width: 200px;
+      }
+
+      .header .picture img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .gallery {
+        /* padding: 1.5rem; */
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem 3rem;
+      }
+      .gallery div {
+        /* margin: 0 1.5rem; */
+        border: 1px solid black;
+        width: 300px;
+      }
+
+      .gallery div img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      /* 
+      li:first-child {
+        margin-left: 0;
+      } */
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="container">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Get in touch</a></li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="title">
+        <h1>This is my portfolio</h1>
+        <h2>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+          suscipit voluptas id non, fugiat commodi voluptate reprehenderit
+        </h2>
+      </div>
+      <div class="picture"><img src="https://picsum.photos/300" /></div>
+    </header>
+
+    <div class="gallery">
+      <div><img src="https://picsum.photos/400" /></div>
+      <div><img src="https://picsum.photos/400" /></div>
+      <div><img src="https://picsum.photos/300" /></div>
+      <div><img src="https://picsum.photos/400" /></div>
+      <div><img src="https://picsum.photos/300" /></div>
+      <div><img src="https://picsum.photos/600" /></div>
+      <div><img src="https://picsum.photos/600" /></div>
+      <div><img src="https://picsum.photos/400" /></div>
+      <div><img src="https://picsum.photos/300" /></div>
+      <div><img src="https://picsum.photos/600" /></div>
+      <div><img src="https://picsum.photos/300" /></div>
+      <div><img src="https://picsum.photos/400" /></div>
+      <div><img src="https://picsum.photos/300" /></div>
+      <div><img src="https://picsum.photos/400" /></div>
+      <div><img src="https://picsum.photos/300" /></div>
+      <div><img src="https://picsum.photos/600" /></div>
+      <div><img src="https://picsum.photos/600" /></div>
+      <div><img src="https://picsum.photos/400" /></div>
+      <div><img src="https://picsum.photos/300" /></div>
+      <div><img src="https://picsum.photos/600" /></div>
+      <div><img src="https://picsum.photos/400" /></div>
+      <div><img src="https://picsum.photos/300" /></div>
+      <div><img src="https://picsum.photos/600" /></div>
+      <div><img src="https://picsum.photos/400" /></div>
+      <div><img src="https://picsum.photos/300" /></div>
+      <div><img src="https://picsum.photos/600" /></div>
+      <div><img src="https://picsum.photos/600" /></div>
+    </div>
+  </body>
+</html>

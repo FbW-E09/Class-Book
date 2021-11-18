@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /*
+        align-items 
+         
+        - controls the element along the cross axis
+        - show the different values of align-items 
+          - to make them work, the container needs to have a height
+        - to see the value baseline in action, make the font of individual boxes different
+
+        - stretch (default)
+        - flex-start
+        - flex-end
+        - center
+        - baseline
+        */
+      .container {
+        border: 3px solid tomato;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .box-2 {
+        font-size: 16px;
+      }
+      .box-3 {
+        font-size: 24px;
+      }
+      .box-4 {
+        font-size: 60px;
+      }
+
+      .box-7 {
+        font-size: 30px;
+      }
+
+      .img {
+        width: 100px;
+      }
+
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">1</div>
+      <div class="box img">
+        <img
+          src="https://images.unsplash.com/photo-1593642532009-6ba71e22f468?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80"
+        />
+      </div>
+
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+      <div class="box box-4">4</div>
+      <div class="box box-5">5</div>
+      <div class="box box-6">6</div>
+      <div class="box box-7">7</div>
+    </div>
+  </body>
+</html>
