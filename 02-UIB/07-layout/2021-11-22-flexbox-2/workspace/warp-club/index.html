@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: 2em;
+      }
+      .box {
+        padding: 1.5rem;
+      }
+
+      .container {
+        border: 5px solid teal;
+        display: flex;
+      }
+
+      .box-1 {
+        background-color: tomato;
+        /* flex-grow: 4; */
+        /* width: 200px; */
+      }
+      .box-2 {
+        background-color: lightgreen;
+        flex-basis: 200px;
+        flex-shrink: 0;
+      }
+
+      .box-3 {
+        background-color: yellowgreen;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-1">Lorem ipsum bla bla</div>
+        <div class="box box-2">2</div>
+        <div class="box box-3">3</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        
+        flex-grow:
+         - 0 (default)
+
+        -  0 tells the element not to grow, to be just as big as its content
+        - any other positive value will make the item to occupy all the space available 
+        */
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: 5em;
+      }
+      .box {
+        padding: 1.5rem;
+      }
+
+      .container {
+        border: 5px solid teal;
+        display: flex;
+      }
+
+      /* 
+      available space: 900px
+
+      900 / 3 = 300
+
+      flex-grow: 2;  // 300 * 2 = 600px
+
+      flex-grow: 1; // 300 * 1 = 300px;
+      */
+      .box-1 {
+        background-color: tomato;
+        /* flex-grow: 4; */
+        flex-grow: 1;
+      }
+      .box-2 {
+        background-color: lightgreen;
+        flex-grow: 4;
+      }
+
+      .box-3 {
+        background-color: yellowgreen;
+        flex-grow: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box">box</div> -->
+    <div class="container">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+    </div>
+  </body>
+</html>

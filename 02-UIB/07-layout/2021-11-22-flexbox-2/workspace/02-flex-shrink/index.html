@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* 
+      flex-shrink
+      - 1 (default)
+      
+      */
+      body {
+        font-size: 5em;
+      }
+      .box {
+        padding: 1.5rem;
+      }
+
+      .container {
+        border: 5px solid teal;
+        display: flex;
+        align-items: center;
+      }
+
+      .box-1 {
+        border: 3px solid tomato;
+        /* flex-grow: 1; */
+        flex-shrink: 1;
+        width: 100%;
+      }
+      .box-2 {
+        border: 3px solid lightgreen;
+        flex-shrink: 2;
+      }
+
+      .box-3 {
+        background-color: yellowgreen;
+        border: 3px solid yellowgreen;
+        /* flex-grow: 1; */
+        flex-shrink: 2;
+        width: 100%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">1</div>
+      <div class="box box-2">2</div>
+      <div class="box box-3">3</div>
+    </div>
+  </body>
+</html>
