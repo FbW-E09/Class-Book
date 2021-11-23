@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      img {
+        display: block;
+        width: 100%;
+      }
+
+      .card {
+        border: 1px solid rgba(0, 0, 0, 0.399);
+        display: flex;
+        /* align-items: flex-start; */
+        flex-direction: column;
+        border-radius: 16px;
+        padding: 1.5rem;
+        /* flex-grow: 1; */
+        flex-shrink: 1;
+        flex-basis: 30%;
+      }
+
+      .card-picture {
+        border: 3px solid tomato;
+        margin-bottom: 1.5rem;
+      }
+
+      .card-title {
+        margin-bottom: 0.75rem;
+      }
+      .card-text {
+        border: 1px solid red;
+        margin-bottom: 1.75rem;
+        /* flex-grow: 1; */
+      }
+
+      .card-button {
+        align-self: center;
+        background-color: turquoise;
+        /* display: inline-block; */
+        padding: 0.75rem 1.5rem;
+        /* margin-bottom: 0; */
+        margin-top: auto;
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+        /* flex-flow: row wrap; */
+        flex-wrap: wrap;
+        gap: 3rem 1.5rem;
+        margin: auto;
+        padding: 1.5rem;
+        width: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-picture"><img src="images/designer-girl.png" /></div>
+        <h3 class="card-title">Designer girl</h3>
+        <p class="card-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+          neque. Fuga, quisquam perspiciatis ex dolor iste expedita magnam.
+        </p>
+        <a class="card-button" href="#">Hire</a>
+      </div>
+
+      <div class="card">
+        <div class="card-picture"><img src="images/designer-girl.png" /></div>
+        <h3 class="card-title">Designer girl</h3>
+        <p class="card-text">Lorem ipsum dolor,</p>
+        <a class="card-button" href="#">Hire</a>
+      </div>
+      <div class="card">
+        <div class="card-picture"><img src="images/designer-girl.png" /></div>
+        <h3 class="card-title">Designer girl</h3>
+        <p class="card-text">
+          Lorem ipsum dolor, neque. Fuga, quisquam perspiciatis ex dolor iste
+          expedita magnam.
+        </p>
+        <a class="card-button" href="#">Hire</a>
+      </div>
+      <div class="card">
+        <div class="card-picture"><img src="images/designer-girl.png" /></div>
+        <h3 class="card-title">Designer girl</h3>
+        <p class="card-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+          neque. Fuga, quisquam perspiciatis ex dolor iste expedita magnam.
+        </p>
+        <a class="card-button" href="#">Hire</a>
+      </div>
+
+      <div class="card">
+        <div class="card-picture"><img src="images/designer-girl.png" /></div>
+        <h3 class="card-title">Designer girl</h3>
+        <p class="card-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+          neque. Fuga, quisquam perspiciatis ex dolor iste expedita magnam.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+          neque. Fuga, quisquam perspiciatis ex dolor iste expedita magnam.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+          neque. Fuga, quisquam perspiciatis ex dolor iste expedita magnam.
+        </p>
+        <a class="card-button" href="#">Hire</a>
+      </div>
+      <div class="card">
+        <div class="card-picture"><img src="images/designer-girl.png" /></div>
+        <h3 class="card-title">Designer girl</h3>
+        <p class="card-text">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+          neque. Fuga, quisquam perspiciatis ex dolor iste expedita magnam.
+        </p>
+        <a class="card-button" href="#">Hire</a>
+      </div>
+    </div>
+  </body>
+</html>
