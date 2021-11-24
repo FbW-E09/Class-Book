@@ -1,0 +1,46 @@
+:root {
+  --primary: #cc688d;
+  --secondary: #99789d;
+  --tertiary: #3399bc;
+  --quaternary: #43d4ba;
+  --senary: #738a83;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+div {
+  padding: 2rem;
+  text-align: center;
+}
+
+div:nth-child(odd) {
+  background-color: var(--quaternary);
+}
+
+div:nth-child(even) {
+  background-color: var(--tertiary);
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.container {
+  margin: 2% auto;
+  max-width: 960px;
+  font-size: 2rem;
+  display: grid;
+  gap: 10px;
+
+  /* grid-template-columns: 500px 200px; */
+  /* grid-template-columns: 1fr auto; */
+}
