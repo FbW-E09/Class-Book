@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+
+      transform: 
+        - translateX()
+        - translateY()
+        - translate()
+        - rotate()
+        - scale()
+      */
+      .box {
+        background-color: tomato;
+        /* display: inline-block; */
+        height: 100px;
+        width: 100px;
+      }
+
+      .box-1 {
+        /* transform: translateX(130px); */
+        /* transform: translateX(-50px) translateY(100px); */
+        /* transform: translate(50px, 100px) rotate(45deg);  */
+        /* transform: rotate(16deg); */
+        /* transform: scale(0.5) translateX(100%); */
+        transform: translateX(100%) scale(0.5) rotate(15deg);
+
+        /* margin-left: 100px; */
+      }
+
+      .box-2 {
+        background-color: teal;
+        transform: scale(0.5) translateX(100%);
+        /* margin-left: 100%; */
+      }
+
+      .text {
+        /* transform: rotate(16deg) translate(100px); */
+        transform: translate(100px) rotate(16deg);
+      }
+
+      .button {
+        background-color: violet;
+        color: black;
+        display: inline-block;
+        padding: 1.5rem;
+        transition: 0.5s;
+      }
+
+      .button:hover {
+        transform: rotate(360deg) translate(16px, 16px) scale(1.2); 
+      }
+    </style>
+  </head>
+  <body>
+    <a class="button" href="#">button</a>
+    <div class="box box-1">1</div>
+    <div class="box box-2">2</div>
+    <div class="text">lorem ipsum</div>
+  </body>
+</html>

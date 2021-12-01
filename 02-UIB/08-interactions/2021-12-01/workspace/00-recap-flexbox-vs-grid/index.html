@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+          /* background-color: teal; */
+      }
+
+      .nav {
+        display: flex;
+        list-style-type: none;
+      }
+
+      .nav li {
+        border: 1px solid red;
+        margin-left: 1.5rem;
+      }
+
+      .grid-nav {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+      .grid-nav li {
+        border: 1px solid red;
+      }
+
+      .container {
+          background-color: teal;
+          width: 400px;
+          padding: 1.5rem;
+      }
+
+      .tags {
+          display: flex;
+          gap: 0.75rem 1.5rem;
+          list-style-type: none;
+          flex-wrap: wrap;
+      }
+
+      .tags li {
+          background-color: white;
+          border-radius: 16px;
+          padding: 0.25rem 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="nav">
+      <li>Home</li>
+      <li>Contact</li>
+      <li>Very long link</li>
+      <li>A</li>
+      <li>Lorem ipsum dolor sit amet consectetur</li>
+    </ul>
+
+    <ul class="grid-nav">
+      <li>Home</li>
+      <li>Contact</li>
+      <li>Very long link</li>
+      <li>A</li>
+      <li>Lorem ipsum dolor sit amet consectetur</li>
+    </ul>
+
+    <div class="container">
+      <ul class="tags">
+        <li>black-and-white</li>
+        <li>a</li>
+        <li>bla</li>
+        <li>slfkjsalgfs sdlkfj</li>
+        <li>a</li>
+        <li>minimal</li>
+        <li>nature</li>
+        <li>sadf</li>
+        <li>lks dlsdd glggg</li>
+        <li>minimal</li>
+        <li>fsdl dslafg glsfg dkgghfh</li>
+        <li>a</li>
+        <li>sadf</li>
+        <li>minimal</li>
+        <li>nature</li>
+      </ul>
+    </div>
+  </body>
+</html>

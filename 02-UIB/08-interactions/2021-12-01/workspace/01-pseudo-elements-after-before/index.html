@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+
+      *,
+      *::after,
+      *::before {
+        box-sizing: border-box;
+      }
+
+      .box {
+        background-color: tomato;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        width: 200px;
+        position: relative;
+      }
+
+      .box::before {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: teal;
+        height: 50px;
+        width: 50px;
+        top: 0;
+        left: 0;
+      }
+      .box::after {
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: chartreuse;
+        height: 50px;
+        width: 50px;
+        top: 0;
+        right: 0;
+      }
+
+      .before,
+      .after {
+        position: absolute;
+        background-color: teal;
+        height: 50px;
+        width: 50px;
+      }
+
+      .before {
+        left: 0;
+        top: 0;
+      }
+      .after {
+        right: 0;
+        bottom: 0;
+      }
+
+      .content {
+        font-size: 1.5em;
+      }
+
+      .content::before {
+        content: "+";
+      }
+      .content::after {
+        content: "*";
+      }
+
+      .nav {
+        display: flex;
+        font-size: 1.5em;
+        list-style-type: none;
+      }
+
+      .nav li {
+        margin-left: 1.5rem;
+      }
+
+      .nav li::after {
+        content: "//";
+        padding-left: 1.5rem;
+      }
+
+      .nav li:last-child::after {
+        content: "";
+      }
+
+      .column {
+        font-size: 2em;
+        /* display: flex;
+    
+          flex-direction: column; */
+      }
+
+      .column::before,
+      .column::after {
+        background-color: chartreuse;
+        content: "🍕";
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    &copy; &#169;
+    <div class="box">
+      <!-- <div class="before"></div> -->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima obcaecati
+      fugiat excepturi possimus aperiam error aliquam, debitis iure,
+      <!-- <div class="after"></div> -->
+    </div>
+
+    <span class="content">bla</span>
+    <ul class="nav">
+      <li>Home</li>
+      <li>Portfolio</li>
+      <li>About</li>
+      <li>Contacts</li>
+    </ul>
+
+    <div class="column">some text</div>
+    <ul>
+        <li>item 1</li>
+        <li>item 1</li>
+        <li>item 1</li>
+        <li>item 1</li>
+        <li>item 1</li>
+        <li>item 1</li>
+    </ul>
+  </body>
+</html>

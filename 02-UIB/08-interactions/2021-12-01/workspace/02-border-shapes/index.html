@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .square {
+        background-color: tomato;
+        height: 100px;
+        width: 100px;
+      }
+
+      .rectangle {
+        background-color: rebeccapurple;
+        height: 100px;
+        width: 200px;
+      }
+      .circle {
+        background-color: tomato;
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+      }
+      .ellipse {
+        background-color: rebeccapurple;
+        border-radius: 50%;
+        height: 100px;
+        width: 200px;
+      }
+
+      .triangle {
+        /* background-color: royalblue; */
+        height: 0;
+        width: 0;
+      }
+
+      .point-up {
+        border-bottom: 20px solid transparent;
+        border-left: 120px solid blueviolet;
+        border-right: 100px solid transparent;
+        border-top: 100px solid transparent;
+        height: 0;
+        width: 0;
+      }
+
+      .point-down {
+        border-top: 100px solid royalblue;
+        border-left: 100px solid transparent;
+        border-right: 100px solid transparent;
+      }
+      .point-right {
+        border-bottom: 100px solid transparent;
+        border-left: 100px solid royalblue;
+        border-top: 100px solid transparent;
+      }
+
+      .borders {
+        border-bottom: 15px groove turquoise;
+        border-left: 15px groove blueviolet;
+        border-right: 15px groove blue;
+        border-top: 15px groove tomato;
+      }
+      .ribbon {
+        border-bottom: 100px solid blue;
+        border-left: 100px solid transparent;
+        border-right: 100px solid blue;
+        border-top: 100px solid blue;
+        height: 0;
+        width: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="square"></div>
+    <div class="rectangle"></div>
+    <div class="circle"></div>
+    <div class="ellipse"></div>
+    <div class="triangle point-up"></div>
+    <div class="triangle point-right"></div>
+    <div class="triangle point-down"></div>
+    <div class="borders">some content</div>
+    <div class="ribbon"></div>
+  </body>
+</html>
