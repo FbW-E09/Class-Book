@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        background-color: tomato;
+        list-style-type: none;
+        opacity: 0;
+        transition: 1s;
+        position: absolute;
+        visibility: hidden;
+      }
+
+      .hidden-menu {
+        position: relative;
+      }
+      .hidden-menu:hover .main-menu {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .sub-menu ul {
+        opacity: 0;
+        visibility: hidden;
+        transition: 1s;
+      }
+
+      .sub-menu:hover ul {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="hidden-menu">
+        Menu
+        <ul class="main-menu">
+          <li><a href="http://example.com">Home</a></li>
+          <li><a href="http://example.com">Portfolio</a></li>
+          <li><a href="http://example.com">About</a></li>
+          <li>
+            <div class="sub-menu">
+              <a href="http://example.com">Contacts</a>
+              <ul>
+                <li>email</li>
+                <li>phone</li>
+                <li>address</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam at
+      quibusdam aliquam error eius inventore excepturi, quod facere et earum
+      deserunt fugit dolorum similique repellat odit eum possimus nostrum dolor.
+    </p>
+  </body>
+</html>

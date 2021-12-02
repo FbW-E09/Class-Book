@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        background-color: tomato;
+        box-shadow: -50px -50px 0px 15px black,  50px 50px 0px 15px teal, 0px 150px 0px 15px teal; 
+        clip-path: polygon(100px 37px, 20px 67px, 123px 189px);
+        height: 100px;
+        transition: 0.5s;
+        width: 100px;
+        margin-left: 100px;
+        margin-top: 100px;
+      }
+
+      .box:hover {
+        box-shadow: 8px 8px 5px 5px black; 
+        transform: translate(-5px, -5px);
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        overflow:
+
+        Controls what happens when we have content overflowing their container
+        For example, a div with a fixed height that contains some text longer than its height
+
+        - visible (default): we will see the overflowed content
+        - hidden: the overflow content is not visible
+        - auto: scrollbars are added as needed
+        - scroll: scrollbars are always present, even if they are not needed
+        
+        */
+      .container {
+        border: 5px solid tomato;
+        overflow-y: scroll;
+        height: 200px;
+      }
+
+      img {
+          display: block;
+          width: 100%;
+      }
+
+      .frame {
+          border: 5px solid hotpink;
+          overflow: hidden;
+          width: 300px;
+      }
+
+      .frame:hover img {
+          transform: scale(1.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil labore
+      corporis iure. Quisquam hic, necessitatibus perferendis eius in tenetur
+      aperiam repellendus accusantium dolore laudantium, eaque maxime
+      asperiores! Rerum, culpa distinctio. Nisi et sit similique molestias, modi
+      numquam recusandae inventore accusantium quod qui earum quia ea ad omnis
+      molestiae tenetur sapiente? Iusto nostrum quis magnam facilis dolorum
+      voluptatem explicabo aliquam ad. Adipisci distinctio, quidem labore facere
+      harum repellat doloremque non porro voluptas magni earum nihil a nulla
+      maxime tempora, totam nisi repellendus tempore sunt quaerat quam quod
+      reiciendis mollitia? Deserunt, earum? Veniam magnam asperiores quaerat
+      tempore ipsa reiciendis nulla! Non, enim eveniet blanditiis neque itaque
+      ipsam. Dolore id officia, tenetur ratione voluptates ex asperiores
+      necessitatibus eum, earum dicta quod vitae obcaecati! Voluptates nobis
+      quia, quae vitae cupiditate corporis soluta ipsum libero quidem modi
+      assumenda doloremque ut autem fugiat odio delectus illo asperiores iure
+      dolore. Debitis dolore tempore officiis quaerat fuga nihil.
+    </div>
+
+    <div class="frame">
+      <img
+        src="https://images.unsplash.com/photo-1638267525212-491338fd463d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80"
+      />
+    </div>
+  </body>
+</html>

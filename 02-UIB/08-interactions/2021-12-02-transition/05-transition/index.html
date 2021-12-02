@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        transition 
+
+        - transition-delay
+        - transition-duration
+        - transition-property
+        - transition-timing-function
+
+        transition: 2s;
+        */
+
+      .container {
+        border: 5px solid teal;
+        display: flex;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+      }
+
+      .box-1 {
+        background-color: tomato;
+        /* transition-duration: 1s;
+        transition-property: all;
+        transition-timing-function: ease; */
+        transition: all 1s ease;
+      }
+      .box-2 {
+        background-color: teal;
+        margin: auto;
+        transition-duration: 5s;
+        transition-property: all;
+        transition-delay: 1s;
+      }
+
+      /* .container:hover .box-1:after {
+          content: "hi";
+      } */
+      .container:hover .box-1 {
+        background-color: violet;
+        color: white;
+        opacity: 0.5;
+        transform: translateX(220px);
+
+        /* margin-left: 100%; */
+      }
+      .container:hover .box-2 {
+        transform: translateX(200px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1"></div>
+      <div class="box box-2"></div>
+    </div>
+  </body>
+</html>

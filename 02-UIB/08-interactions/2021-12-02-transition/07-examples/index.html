@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .button {
+        background-color: tomato;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+        transition: 1s;
+      }
+      .button-2 {
+        background-color: teal;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        width: 100px;
+        transition: 1s;
+      }
+      .trigger {
+        border: 1px solid black;
+        height: 100px;
+        width: 100px;
+      }
+
+      .trigger:hover .button {
+        transform: translateY(100px);
+      }
+      /* .button:hover {
+        transform: translateY(100px);
+      } */
+      .button-2:hover {
+        transform: translateY(100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="trigger">
+      <a class="button" href="#">click me!</a>
+    </div>
+    <a class="button-2" href="#">click me!</a>
+  </body>
+</html>

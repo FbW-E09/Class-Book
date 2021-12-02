@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 
+        transition 
+
+        - transition-delay
+        - transition-duration
+        - transition-property
+        - transition-timing-function
+
+        transition: 2s;
+        */
+
+      .container {
+        border: 5px solid teal;
+      }
+
+      .box {
+        height: 100px;
+        width: 100px;
+        transition-duration: 3s;
+      }
+
+      .box-1 {
+        background-color: tomato;
+        transition-timing-function: ease;
+      }
+      .box-2 {
+        background-color: teal;
+        transition-timing-function: linear;
+      }
+      .box-3 {
+        background-color: hotpink;
+        transition-timing-function: ease-in;
+      }
+      .box-4 {
+        background-color: mediumseagreen;
+        transition-timing-function: ease-out;
+      }
+      .box-5 {
+        background-color: indianred;
+        transition-timing-function: ease-in-out;
+      }
+      .box-6 {
+        background-color: goldenrod;
+        transition-timing-function: steps(5);
+      }
+
+      .box-7 {
+        background-color: turquoise;
+        transition-timing-function: cubic-bezier(.34,-0.56,.45,1.14);
+      }
+      .container:hover .box-1,
+      .container:hover .box-2,
+      .container:hover .box-3,
+      .container:hover .box-4,
+      .container:hover .box-5, 
+      .container:hover .box-6, 
+      .container:hover .box-7 {
+        transform: translateX(500px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box box-1">ease</div>
+      <div class="box box-2">linear</div>
+      <div class="box box-3">ease in</div>
+      <div class="box box-4">ease out</div>
+      <div class="box box-5">ease in out</div>
+      <div class="box box-6">steps</div>
+      <div class="box box-7">cubic bezier</div>
+      
+    </div>
+  </body>
+</html>
