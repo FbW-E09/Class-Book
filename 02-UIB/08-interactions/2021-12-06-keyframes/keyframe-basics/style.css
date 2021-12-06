@@ -1,0 +1,47 @@
+body {
+  background: lightblue;
+}
+
+.box {
+  margin: 50px auto;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  /* position: relative; */
+
+  /* What's the name of our animation?  */
+  animation-name: ourAnimation;
+  /* What's the duration of our animation? */
+  animation-duration: 8s;
+  /* How many time should our animation run? */
+  animation-iteration-count: infinite;
+
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+.box-2 {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes ourAnimation {
+  0% {
+    transform-origin: bottom left;
+    transform: rotate(45deg) translate(50px, 50px);
+    background: #ffaadd;
+  }
+  50% {
+    transform-origin: bottom right;
+    transform: rotate(100deg) translate(75px, 100px);
+    background: #ffadad;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  75% {
+    transform-origin: bottom right;
+    transform: rotate(180deg) translate(100px, 150px);
+    background: #ffd6a5;
+  }
+}

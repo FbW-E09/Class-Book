@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+}
+
+.ball {
+  position: absolute;
+  bottom: 30vh;
+  width: 100px;
+  height: 100px;
+  background: red;
+  clip-path: circle();
+  /* Chain two animations - apply two animations to the same element. 
+  Forward animation should be smooth (linear).
+  For the dribbling, ease-in-out for a better bouncing effect. 
+  */
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  animation: moveBall 5s infinite linear,
+    bouncing 0.7s 0.3s infinite ease-in-out;
+}
+
+.ground {
+  position: absolute;
+  top: 70vh;
+  left: 0;
+  width: 100%;
+  border-top: 20px solid #333;
+}
+
+/* For moving the ball forward */
+@keyframes moveBall {
+  from {
+    left: 0;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+/* For bouncing the ball up and down */
+@keyframes bouncing {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-120px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
