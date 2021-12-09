@@ -1,0 +1,22 @@
+@import "variables";
+@import "nav";
+
+
+html,
+body {
+  height: 50%;
+}
+
+
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+  font-family: $font;
+}
+
+a {
+  color: $link-color;
+}
+
+

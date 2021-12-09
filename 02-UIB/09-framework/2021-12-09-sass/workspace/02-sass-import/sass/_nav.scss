@@ -1,0 +1,22 @@
+.main-nav {
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    li {
+      margin-left: 1.5rem;
+      .nav-link {
+        background-color: $light-color;
+        border-radius: 16px;
+        color: $text-color;
+        display: block;
+        padding: 0.5em 1.75em;
+        text-decoration: none;
+      }
+      .nav-link:hover {
+        background-color: $text-color;
+        color: $light-color;
+      }
+    }
+  }
+}

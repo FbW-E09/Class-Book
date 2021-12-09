@@ -1,0 +1,52 @@
+// $blue: tomato;
+// @import "bootstrap/bootstrap";
+
+// .nav-link {
+//   color: tomato;
+// }
+
+// .text-primary {
+//   color: teal !important;
+// }
+
+// .bg-primary {
+//   background-color: teal !important;
+// }
+
+// $blue: #0d6efd !default;
+
+// $blue: tomato !default;
+
+// $background-color: tomato;
+// $text-color: black;
+
+// body {
+//   background-color: $background-color;
+//   color: $text-color;
+// }
+
+// .box {
+// //   $background-color: black;
+// //   $text-color: white;
+// //   background-color: $background-color;
+// //   color: $text-color;
+// //   height: 100px;
+// //   width: 100px;
+// }
+
+// $bg-color: tomato;
+
+// @media (min-width: 800px) {
+//   $bg-color: yellowgreen;
+//   p {
+//       background-color: $bg-color;
+//       font-size: 1.5em;
+//   }
+// }
+
+html,
+body {
+  background-color: $bg-color;
+}
+
+

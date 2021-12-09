@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* :root {
+        --bg-color: #333;
+        --color: #ddd;
+      }
+
+      @media (min-width: 960px) {
+        :root {
+          --bg-color: pink;
+          --color: #333;
+        }
+      }
+      html,
+      body {
+        background-color: var(--bg-color);
+        color: var(--color);
+      } */
+
+      .post {
+        --bg-color: bisque;
+        --color: #333;
+        background-color: var(--bg-color);
+        border: 1px solid var(--color);
+        border-radius: 16px;
+        color: var(--color);
+      }
+
+      .post h2 {
+        background-color: var(--color);
+        color: var(--bg-color);
+      }
+      .post.dark {
+        --bg-color: #333;
+        --color: bisque;
+      }
+
+      /* .post {
+        background-color: bisque;
+        border: 1px solid #333;
+        border-radius: 16px;
+      }
+
+      .post h2 {
+        background-color: #333;
+        color: bisque;
+      }
+
+      .post.dark {
+        background-color: #333;
+        color: bisque;
+      }
+
+      .post.dark h2 {
+        background-color: bisque;
+        color: #333;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="post">
+      <h2>Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+        repellendus ea iste nemo perspiciatis autem, ratione esse pariatur
+        tempore molestias fugiat qui voluptatum minus sequi cum a doloremque
+        minima? Amet.
+      </p>
+    </div>
+
+    <div class="post dark">
+      <h2>Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+        repellendus ea iste nemo perspiciatis autem, ratione esse pariatur
+        tempore molestias fugiat qui voluptatum minus sequi cum a doloremque
+        minima? Amet.
+      </p>
+    </div>
+    <div class="post">
+      <h2>Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+        repellendus ea iste nemo perspiciatis autem, ratione esse pariatur
+        tempore molestias fugiat qui voluptatum minus sequi cum a doloremque
+        minima? Amet.
+      </p>
+    </div>
+
+    <div class="post dark">
+      <h2>Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
+        repellendus ea iste nemo perspiciatis autem, ratione esse pariatur
+        tempore molestias fugiat qui voluptatum minus sequi cum a doloremque
+        minima? Amet.
+      </p>
+    </div>
+  </body>
+</html>
