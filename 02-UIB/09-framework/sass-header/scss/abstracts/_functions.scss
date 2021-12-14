@@ -1,0 +1,14 @@
+// set text color based on background color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return $clr-dark;
+  }
+  @return $clr-light;
+}
+
+// Using a mixin with our function,  we'll set the background & text-color
+
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}

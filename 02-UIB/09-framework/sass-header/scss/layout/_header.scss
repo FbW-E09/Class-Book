@@ -1,6 +1,6 @@
 .showcase {
-  background-color: $clr-primary;
-  height: 600px;
+  @include set-background($clr-secondary);
+  height: 100vh;
   // .showcase nav
   nav {
     display: flex;
@@ -16,12 +16,12 @@
     }
 
     a:hover {
-      color: $clr-secondary;
+      color: grey;
     }
   }
 
   a {
-    color: white;
+    // color: set-text-color($clr-primary);
   }
   // .showcase__content
   &__content {

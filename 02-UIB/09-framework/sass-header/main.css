@@ -15,43 +15,8 @@ body {
   line-height: 1.6;
 }
 
-.showcase {
-  background-color: #1b99ac;
-  height: 600px;
-}
-.showcase nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.showcase nav ul {
-  display: flex;
-  list-style-type: none;
-}
-.showcase nav li {
-  padding: 15px;
-}
-.showcase nav a:hover {
-  color: #ff7d00;
-}
-.showcase a {
-  color: white;
-}
-.showcase__content {
-  display: flex;
-}
-.showcase__content img {
-  width: 50%;
-}
-.showcase__content h1 {
-  font-size: 50px;
-  line-height: 1.2;
-}
-.showcase__content p {
-  margin: 20px 0;
-}
-
 .container {
+  margin: 0 auto;
   max-width: 1100px;
   padding: 0 30px;
 }
@@ -134,6 +99,55 @@ body {
 
 .py-5 {
   padding: 5rem 0;
+}
+
+.showcase {
+  background-color: #ff7d00;
+  color: #001524;
+  height: 100vh;
+}
+.showcase nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.showcase nav ul {
+  display: flex;
+  list-style-type: none;
+}
+.showcase nav li {
+  padding: 15px;
+}
+.showcase nav a:hover {
+  color: grey;
+}
+.showcase__content {
+  display: flex;
+}
+.showcase__content img {
+  width: 50%;
+}
+.showcase__content h1 {
+  font-size: 50px;
+  line-height: 1.2;
+}
+.showcase__content p {
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 3px;
+}
+.btn__primary {
+  background-color: white;
+  color: #001524;
+}
+.btn__secondary {
+  background-color: #4acee3;
+  color: #001524;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+// .btn__primary {
+//   // paste in the button css properties above
+//   @include btn{
+//   background-color: $clr-secondary
+// }
+// }
+
+// .btn__secondary {
+//   @include btn{
+//   background-color: rgb(213, 157, 250);
+// }
+// }
+
+.btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 3px;
+  &__primary {
+    @include set-background(white);
+  }
+  &__secondary {
+    @include set-background(lighten($clr-primary, 20%));
+  }
+}
