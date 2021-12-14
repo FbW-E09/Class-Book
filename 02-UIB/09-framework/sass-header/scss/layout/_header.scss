@@ -1,0 +1,43 @@
+.showcase {
+  background-color: $clr-primary;
+  height: 600px;
+  // .showcase nav
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    li {
+      padding: 15px;
+    }
+
+    a:hover {
+      color: $clr-secondary;
+    }
+  }
+
+  a {
+    color: white;
+  }
+  // .showcase__content
+  &__content {
+    // height: 100%;
+    // align-self: center;
+    // justify-content: center;
+    display: flex;
+    img {
+      width: 50%;
+    }
+    h1 {
+      font-size: 50px;
+      line-height: 1.2;
+    }
+    p {
+      margin: 20px 0;
+    }
+  }
+}
