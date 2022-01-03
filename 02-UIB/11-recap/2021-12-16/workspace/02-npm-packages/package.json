@@ -1,0 +1,16 @@
+{
+  "name": "02-package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass scss/main.scss style.css", 
+    "watch": "sass --watch scss/main.scss style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "sass": "^1.45.0"
+  }
+}
