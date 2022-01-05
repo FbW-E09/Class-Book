@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/e02de8a756.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .logo {
+        color: tomato;
+      }
+
+      .facebook {
+        color: blue;
+      }
+      /* 
+        Pseudo elements
+
+        ::before
+        ::after
+        */
+
+      .box {
+        background-color: lightgreen;
+        height: 100px;
+        width: 100px;
+        position: relative;
+      }
+      .box::before {
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 400;
+        content: "\f26e";
+      }
+      .box::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 400;
+        content: "\f1ea";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+
+      .link::after {
+        font-family: "Font Awesome 5 Brands";
+        font-weight: 400;
+        font-size: 3em;
+        content: "\f26e";
+      }
+
+      ul {
+      }
+
+      ul li {
+
+      }
+      ul a::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f556";
+      }
+
+     .home-link::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f015";
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+
+    <a class="link" href="https://google.com"></a>
+    <i class="logo fab fa-500px fa-5x"></i>
+
+    <i class="facebook fab fa-facebook-square"></i>
+
+    <ul>
+      <li><a class="home-link" href="#">home</a></li>
+      <li><a class="portfolio-link" href="#">portfolio</a></li>
+      <li><a class="about-link" href="#">about</a></li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+      }
+
+      a {
+      }
+
+      a[target="_blank"] {
+        color: tomato;
+      }
+
+      input[type="date"] {
+        border: 1px solid blue;
+      }
+
+      input[type="number"] {
+        border: 1px solid tomato;
+      }
+
+      input::placeholder {
+        color: red;
+      }
+
+      input[placeholder] {
+        border: 1px solid green;
+      }
+      a[href="#home"] {
+        color: pink;
+      }
+      a[href="#"] {
+        color: green;
+      }
+
+      input:focus {
+        outline-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#home">home</a></li>
+      <li><a href="#">about</a></li>
+    </ul>
+
+    <a href="http://google.com" target="_blank">google</a>
+
+    <form>
+      <input minlength="4" maxlength="10" type="text" placeholder="type your name" />
+      <input type="date" />
+      <input type="number" />
+      <button>submit</button>
+    </form>
+  </body>
+</html>

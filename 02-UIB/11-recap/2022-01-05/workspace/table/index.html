@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      table {
+          border-collapse: collapse;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid grey;
+      }
+
+      th, td {
+          padding: 1.5rem;
+      }
+
+      th {
+          /* background-color: hotpink; */
+      }
+
+      /* 
+      :nth-child()
+      - odd (2n + 1)
+      - even (2n)
+      */
+      tr:nth-child(2n + 1) {
+          background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+        tr
+        th
+        td
+
+        thead
+        tbody
+        tfoot
+
+        scope attribute:
+        - col
+        - row
+
+        colspan
+        rowspan
+    -->
+    <table>
+      <thead>
+        <tr>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>Jim</td>
+        <td>Doe</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Jane</td>
+        <td>Mat</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td>Jim</td>
+        <td>Doe</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Jane</td>
+        <td>Mat</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td>Jim</td>
+        <td>Doe</td>
+        <td>23</td>
+      </tr>
+      <tr>
+        <td>Jane</td>
+        <td>Mat</td>
+        <td>34</td>
+      </tr>
+    </table>
+
+    <table>
+        <caption>Color names and values</caption>
+        <tbody>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">HEX</th>
+            <th scope="col">HSLa</th>
+            <th scope="col">RGBa</th>
+          </tr>
+          <tr>
+            <th scope="row">Teal</th>
+            <td><code>#51F6F6</code></td>
+            <td><code>hsla(180, 90%, 64%, 1)</code></td>
+            <td><code>rgba(81, 246, 246, 1)</code></td>
+          </tr>
+          <tr>
+            <th scope="row">Goldenrod</th>
+            <td><code>#F6BC57</code></td>
+            <td><code>hsla(38, 90%, 65%, 1)</code></td>
+            <td><code>rgba(246, 188, 87, 1)</code></td>
+          </tr>
+        </tbody>
+      </table>
+  </body>
+</html>
