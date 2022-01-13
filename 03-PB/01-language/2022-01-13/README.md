@@ -1,0 +1,11 @@
+- let vs const
+- conditional assignment with the ternary operator
+- String interpolation: template literals, using expressions within strings
+- Getting the length of a string: `String.prototype.length`
+- Getting a character in a string: bracket notation
+- Converting case with: 
+  `String.prototype.toUpperCase()`, `String.prototype.toLowerCase()`
+- Extracting parts of a string: `String.prototype.substring()`
+- Checking if a string is inside another string: `String.prototype.includes()`
+- Removing padding spaces: `String.prototype.trim()`"
+- `String.prototype.replace()`

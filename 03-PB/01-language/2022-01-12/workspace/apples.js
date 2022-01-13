@@ -1,8 +1,7 @@
-let oranges = 6;
-let apples = 6;
-let mangoes = 5;
+let oranges = 2;
+let apples = 5;
+let mangoes = 6;
 
-console.log(
-  "8. Are mangoes, apples and oranges equal?",
-  ((mangoes === apples) === (mangoes === oranges)) === (apples === oranges)
-);
+
+let equal = mangoes == apples && apples == oranges;
+console.log("mangoes, apples and oranges are equal? " + equal);
