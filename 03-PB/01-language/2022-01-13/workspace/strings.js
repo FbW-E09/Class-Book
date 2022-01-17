@@ -55,3 +55,6 @@ if a string is length 12, the last index in the string will be 11
 // numbers.length - 1; // 5
 
 // console.log(numbers[numbers.length - 1]); // 5
+
+
+
