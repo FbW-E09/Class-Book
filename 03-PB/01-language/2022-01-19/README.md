@@ -3,3 +3,8 @@ Basic Array methods:
 - Adding items: `Array.prototype.push()`, `Array.prototype.unshift()`
 - Removing items: `Array.prototype.pop()`, `Array.prototype.shift()`
 - Manipulating arrays: `Array.prototype.reverse()`
+- slice
+- splice
+- join
+- concat
+- includes
