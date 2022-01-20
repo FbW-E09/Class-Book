@@ -15,15 +15,16 @@ let joinedLetters = letters.join();
 console.log("The joined letters are:", joinedLetters);
 
 let greeting = letters.join("");
-console.log("The joined letters are:", joinedLetters);
+console.log("The joined letters are:", greeting);
+console.log(letters.join("abc"))
 
-// we can transform a string into an array using .split()
+// // we can transform a string into an array using .split()
 
 let name = "carlo";
-let arrayName = name.split();
+let arrayName = name.split("");
 console.log(arrayName);
 
-// we can split according to a specific character
+// // we can split according to a specific character
 let cssProperty = "background-color";
 let arrayCSSProperty = cssProperty.split('-');
 console.log(arrayCSSProperty);
