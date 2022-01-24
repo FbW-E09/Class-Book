@@ -68,8 +68,9 @@ if (isHazelnutAvailable) {
 
 
 
-let initial = "Py";
-let string = "Python";
 
-"Python"
 
+let bmiMark = 100;
+let bmiJohn = 80;
+
+console.log(`Is Mark's BMI higher than John's? Why yes, it's ${bmiMark > bmiJohn}, it is`)

@@ -1,5 +1,3 @@
-let day = "Sunday";
-
 if (day === "Monday") {
   console.log("😱");
 } else if (day === "Tuesday" || day === "Wednesday") {
