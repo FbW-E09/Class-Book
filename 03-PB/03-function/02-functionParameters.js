@@ -9,6 +9,7 @@ function square(number) {
 // square(4);
 // square(1123);
 
+// default parameters
 function showMessage(message = 'hey', name = 'nobody') {
   console.log(` ${message}, ${name}`);
 }
