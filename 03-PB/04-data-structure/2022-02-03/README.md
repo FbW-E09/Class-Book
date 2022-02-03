@@ -1,0 +1,13 @@
+- isPrime solution
+- valid email
+- static methods
+- Array.isArray()
+- bracket notation
+- Object.prototype.hasOwnProperty()
+- Object.keys()
+- Object.values()
+- Object.entries()
+- Object.fromEntries()
+- Object.assign()
+- Object.seal();
+- Object.freeze();
