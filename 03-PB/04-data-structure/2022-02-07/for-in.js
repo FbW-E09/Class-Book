@@ -36,3 +36,13 @@ const movieReviews = {
 for (const movie of Object.keys(movieReviews)) {
   console.log(`you rated ${movie} - ${movieReviews[movie]}`);
 }
+
+// We can also iterate over the values
+// To calculate the average movie rating:
+const ratings = Object.values(movieReviews);
+let total = 0;
+for (let r of ratings) {
+  total += r;
+}
+let avg = total / ratings.length;
+console.log('Average Rating: ', avg);
