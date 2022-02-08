@@ -38,4 +38,21 @@ function sum(...nums) {
 
 // const obj = { 0: 1, 1: 2, 2: 3 };
 
-console.log(sum(2, 4, 5, 8));
+// console.log(sum(2, 4, 5, 8));
+
+// We can have named params and then we can collect the rest into an array
+// function fullName(first, last, ...titles) {
+//   console.log('first', first);
+//   console.log('last', last);
+//   console.log('titles', titles);
+// }
+
+function fullName(...titles,first, last) {
+  console.log('first', first);
+  console.log('last', last);
+  console.log('titles', titles);
+}
+
+
+// fullName('john', 'smith', 'dr', 'mr', 'jr');
+fullName('jr', 'dr', 'john', 'smith');
