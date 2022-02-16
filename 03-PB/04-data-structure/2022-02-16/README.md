@@ -1,0 +1,5 @@
+- brief recap or array methods
+- recap of `reduce()`
+- sorting arrays with sort()
+- closure
+- recursion
