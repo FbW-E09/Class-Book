@@ -10,10 +10,33 @@
     Hint: you don't need to use loops
 */
 
-let counter = 0;
+/**
+ * Pure function
+ *
+ * A pure Function is a function (a block of code ) that always returns the same result
+ * if the same arguments are passed.
+ */
+
+// function sum(a, b) {
+//   return a + b;
+// }
+
+// let a = 2;
+// let b = 5;
+// function sum2() {
+//   return a + b;
+// }
+
+// console.log(sum2());
+// console.log(sum2());
+// a = 9;
+// console.log(sum2());
+// console.log(sum2());
+
+let count = 0;
 function myCounter() {
-  counter++;
-  return counter;
+  count++;
+  return count;
 }
 
 console.log(myCounter()); // 1
@@ -30,18 +53,17 @@ console.log(myCounter()); // 3
     - if I call myCounter2() again now, I should see 4
 */
 
-let counter2 = 0;
+let count2 = 0;
 function myCounter2() {
-  counter2++;
-  return counter2;
+  count2++;
+  return count2;
 }
 
-let counter3 = 0;
+let count3 = 0;
 function myCounter3() {
-  counter3++;
-  return counter3;
+  count3++;
+  return count3;
 }
-
 console.log(myCounter2()); // 1
 console.log(myCounter2()); // 2
 console.log(myCounter3()); // 1
@@ -51,21 +73,23 @@ console.log(myCounter2()); // 4
 
 /**
  * We have a function to flip a coin a we can guess the outcome.
- * 
+ *
  * Complete the code so that it can keep track of our score. For example, if we call it 5 times and we make 3 correct
  * guesses, the score should be 3.
- * 
+ *
  *
  */
 
+let score = 0;
 function flipCoin(guess) {
   let coinSides = ["head", "tail"];
   let randomNumber = Math.floor(Math.random() * 2);
   let symbol = coinSides[randomNumber];
-  console.log("guess", guess);
-  console.log("symbol", symbol);
+  //   console.log("guess", guess);
+  //   console.log("symbol", symbol);
   if (symbol === guess) {
-    return "win";
+    score++;
+    return `win. Current score is: ${score}`;
   } else {
     return "lose";
   }
@@ -73,3 +97,8 @@ function flipCoin(guess) {
 
 console.log(flipCoin("head"));
 console.log(flipCoin("tail"));
+console.log(flipCoin("head"));
+console.log(flipCoin("tail"));
+console.log(flipCoin("tail"));
+console.log(flipCoin("head"));
+

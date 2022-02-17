@@ -17,11 +17,11 @@ console.log("sortedWords", sortedWords);
 
 function descendingWords(a, b) {
   if (a < b) {
-    return 1;
+    return 1; // > 0, sort b before a
   } else if (a > b) {
-    return -1;
+    return -1; // < 0 sort a before b
   } else {
-      return 0;
+      return 0; // keep them as they are
   }
 }
 
