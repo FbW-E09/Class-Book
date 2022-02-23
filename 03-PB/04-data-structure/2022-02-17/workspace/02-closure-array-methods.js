@@ -167,3 +167,31 @@ console.log(myBooks.filter(filterByKeyAndValue("genre", "sci-fi")));
 // book.author; // 'Stephen King'
 // book["author"]; // 'Stephen King'
 // let property = "author"; // book[property]
+
+function diceRoller() {
+  let previousRoll = null;
+  return function roll() {
+    let currentRoll = Math.ceil(Math.random() * 2);
+
+    let result = {
+      previousRoll: previousRoll,
+      currentRoll: currentRoll,
+    };
+    if (currentRoll === previousRoll) {
+      return roll();
+    }
+    previousRoll = currentRoll;
+    return result;
+  };
+}
+
+let roller = diceRoller();
+
+console.log(roller());
+console.log(roller());
+console.log(roller());
+console.log(roller());
+console.log(roller());
+console.log(roller());
+console.log(roller());
+console.log(roller());
