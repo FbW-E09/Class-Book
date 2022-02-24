@@ -3,6 +3,12 @@ function Person(name, age) {
   this.age = age;
 }
 
+function Employee(job) {
+    this.job = job;
+}
+
+Object.setPrototypeOf(Employee, Person);
+
 let person1 = new Person("carlo", 25);
 let person2 = new Person("marty", 33);
 

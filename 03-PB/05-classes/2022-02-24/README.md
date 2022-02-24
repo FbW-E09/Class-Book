@@ -1,0 +1,3 @@
+- card deck solution
+- swapping variable values
+- coffee shop introduction / clarification
