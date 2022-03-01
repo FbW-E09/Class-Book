@@ -61,5 +61,70 @@ function maxCharacter(str) {
   return maxChar;
 }
 
-console.log(maxCharacter('javascript')); // a
+// console.log(maxCharacter('javascript')); // a
 // console.log(createCharMap('javascript'));
+
+// ```javascript
+// // Write a program that prints all the numbers from 1 to 100. For multiples of 3, instead of the number, print "Fizz", for multiples of 5 print "Buzz". For numbers which are multiples of both 3 and 5, print "FizzBuzz".
+// ```;
+
+function fizzBuzz() {
+  const result = [];
+  for (let i = 1; i <= 100; i++) {
+    if (i % 15 === 0) {
+      result.push('FizzBuzz');
+    } else if (i % 3 === 0) {
+      result.push('Fizz');
+    } else if (i % 5 === 0) {
+      result.push('Buzz');
+    } else {
+      result.push(i);
+    }
+  }
+  return result;
+}
+
+// console.log(fizzBuzz());
+
+// Return the longest word of a string
+// Part  1 - Return a single longest word
+
+// Part  2 - Return an array and include multiple words if they have the same length
+// Part  3 - Only return an array if multiple words, otherwise return a string
+// ex:
+
+function longestWord(str) {
+  // Part one
+  // let wordArray = str.split(' ');
+  // let maxLength = 0;
+  // let result = '';
+
+  // for (let i = 0; i < wordArray.length; i++) {
+  //   const word = wordArray[i];
+  //   if (word.length > maxLength) {
+  //     maxLength = word.length;
+  //     result = word;
+  //   }
+  // }
+  // return result;
+
+  // Part 2
+  // Create an array of words
+  const wordArr = str.toLowerCase().split(' ');
+  // Sort word array so largest word is in front (descending order)
+  const sorted = wordArr.sort((a, b) => b.length - a.length);
+  // if any two words are the same length we want them in this array
+  const longestWord = sorted.filter((word) => word.length === sorted[0].length);
+
+  // Part 3
+  // If there's only one word in the filtered (longestWord arrray) return only that string
+  if (longestWord.length === 1) {
+    return longestWord[0];
+  } else {
+    return longestWord;
+  }
+}
+
+// console.log(longestWord('Hi there, my name is Brad'));
+console.log(longestWord('My name is Brad'));
+console.log(longestWord('Brad'));
