@@ -1,5 +1,5 @@
 function reverseString(str) {
-  return str.split('').reverse().join('');
+  return str.split("").reverse().join("");
 
   //   let revString = '';
   //   for (let i = str.length - 1; i >= 0; i--) {
@@ -19,7 +19,7 @@ function isPalindrome(str) {
 // console.log(isPalindrome('racecar'));
 
 function reverseInt(int) {
-  const revString = int.toString().split('').reverse().join('');
+  const revString = int.toString().split("").reverse().join("");
   return +revString;
 }
 
@@ -28,16 +28,16 @@ function reverseInt(int) {
 function capitalizeLetters(str) {
   return str
     .toLowerCase()
-    .split(' ')
+    .split(" ")
     .map((word) => word[0].toUpperCase() + word.substr(1))
-    .join(' ');
+    .join(" ");
 }
 
 // console.log(capitalizeLetters('i love javascript'));
 
 function createCharMap(str) {
   const charMap = {};
-  str.split('').forEach((char) => {
+  str.split("").forEach((char) => {
     if (charMap[char]) {
       charMap[char]++;
     } else {
@@ -50,7 +50,7 @@ function createCharMap(str) {
 function maxCharacter(str) {
   const charMap = createCharMap(str);
   let maxNum = 0;
-  let maxChar = '';
+  let maxChar = "";
 
   for (const char in charMap) {
     if (charMap[char] > maxNum) {
@@ -72,11 +72,11 @@ function fizzBuzz() {
   const result = [];
   for (let i = 1; i <= 100; i++) {
     if (i % 15 === 0) {
-      result.push('FizzBuzz');
+      result.push("FizzBuzz");
     } else if (i % 3 === 0) {
-      result.push('Fizz');
+      result.push("Fizz");
     } else if (i % 5 === 0) {
-      result.push('Buzz');
+      result.push("Buzz");
     } else {
       result.push(i);
     }
@@ -110,7 +110,7 @@ function longestWord(str) {
 
   // Part 2
   // Create an array of words
-  const wordArr = str.toLowerCase().split(' ');
+  const wordArr = str.toLowerCase().split(" ");
   // Sort word array so largest word is in front (descending order)
   const sorted = wordArr.sort((a, b) => b.length - a.length);
   // if any two words are the same length we want them in this array
@@ -126,5 +126,67 @@ function longestWord(str) {
 }
 
 // console.log(longestWord('Hi there, my name is Brad'));
-console.log(longestWord('My name is Brad'));
-console.log(longestWord('Brad'));
+console.log(longestWord("My name is Brad"));
+console.log(longestWord("Brad"));
+
+let products = [
+  {
+    type: "t-shirt",
+    price: 9.99,
+    color: "red",
+  },
+  {
+    type: "socks",
+    price: 4.99,
+    color: "blue",
+  },
+  {
+    type: "jeans",
+    price: 44.99,
+    color: "black",
+  },
+  {
+    type: "t-shirt",
+    price: 14.99,
+    color: "green",
+  },
+  {
+    type: "t-shirt",
+    price: 22.99,
+    color: "blue",
+  },
+  {
+    type: "jeans",
+    price: 59.99,
+    color: "blue",
+  },
+  {
+    type: "skirt",
+    price: 24.99,
+    color: "yellow",
+  },
+  {
+    type: "socks",
+    price: 14.99,
+    color: "yellow",
+  },
+];
+const productTypesSet = [...new Set(products.map((product) => product.type))];
+console.log(productTypesSet);
+
+const groupByType = products.reduce((acc, product) => {
+  acc[product.type] = (acc[product.type] || []).concat(product);
+  return acc;
+}, {});
+
+console.log(groupByType);
+
+const groupByType2 = products.reduce((acc, product) => {
+  if (!acc[product.type]) {
+    acc[product.type] = [];
+  }
+  acc[product.type].push(product);
+  return acc;
+}, {});
+
+console.log(groupByType2);
