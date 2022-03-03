@@ -27,7 +27,7 @@
 |anu|[@anudesi](https://github.com/anudesi)|Student|
 |JoAnn|[@JoAnnSutojo](https://github.com/JoAnnSutojo)|student|
 |Ahmad-Alsoobeh|[@HITW0](https://github.com/HITW0)|student|
-
+|Shadi|[@BananaJoe94](https://github.com/BananaJoe94)
 
 ## Course overview
 
